@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LSCrypt", "LSCrypt\LSCrypt.vcxproj", "{2BAB7CB7-C82B-4A4D-B37B-E4D96ACE7001}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LSCryptPro", "LSCryptPro\LSCryptPro.vcxproj", "{966CF2F6-13C1-4FAC-97C4-10B71BFB5BAC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Debug|x64 = Debug|x64
+		Release|Win32 = Release|Win32
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2BAB7CB7-C82B-4A4D-B37B-E4D96ACE7001}.Debug|Win32.ActiveCfg = Debug|Win32
+		{2BAB7CB7-C82B-4A4D-B37B-E4D96ACE7001}.Debug|Win32.Build.0 = Debug|Win32
+		{2BAB7CB7-C82B-4A4D-B37B-E4D96ACE7001}.Debug|x64.ActiveCfg = Debug|x64
+		{2BAB7CB7-C82B-4A4D-B37B-E4D96ACE7001}.Debug|x64.Build.0 = Debug|x64
+		{2BAB7CB7-C82B-4A4D-B37B-E4D96ACE7001}.Release|Win32.ActiveCfg = Release|Win32
+		{2BAB7CB7-C82B-4A4D-B37B-E4D96ACE7001}.Release|Win32.Build.0 = Release|Win32
+		{2BAB7CB7-C82B-4A4D-B37B-E4D96ACE7001}.Release|x64.ActiveCfg = Release|x64
+		{2BAB7CB7-C82B-4A4D-B37B-E4D96ACE7001}.Release|x64.Build.0 = Release|x64
+		{966CF2F6-13C1-4FAC-97C4-10B71BFB5BAC}.Debug|Win32.ActiveCfg = Debug|Win32
+		{966CF2F6-13C1-4FAC-97C4-10B71BFB5BAC}.Debug|Win32.Build.0 = Debug|Win32
+		{966CF2F6-13C1-4FAC-97C4-10B71BFB5BAC}.Debug|x64.ActiveCfg = Debug|x64
+		{966CF2F6-13C1-4FAC-97C4-10B71BFB5BAC}.Debug|x64.Build.0 = Debug|x64
+		{966CF2F6-13C1-4FAC-97C4-10B71BFB5BAC}.Release|Win32.ActiveCfg = Release|Win32
+		{966CF2F6-13C1-4FAC-97C4-10B71BFB5BAC}.Release|Win32.Build.0 = Release|Win32
+		{966CF2F6-13C1-4FAC-97C4-10B71BFB5BAC}.Release|x64.ActiveCfg = Release|x64
+		{966CF2F6-13C1-4FAC-97C4-10B71BFB5BAC}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
