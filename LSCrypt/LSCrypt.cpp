@@ -33,7 +33,6 @@ CLSCryptModule _AtlModule;
 // DLL Entry Point
 extern "C" BOOL WINAPI DllMain(HINSTANCE hInstance, DWORD dwReason, LPVOID lpReserved)
 {
-	
 	switch(dwReason)
 	{
 	case DLL_PROCESS_ATTACH:
@@ -176,7 +175,7 @@ BOOL WINAPI DLLCheckeRegister(void)
 
 	for(int i=0; i<count; i++)
 	{
-		lRet = ::RegOpenKeyExW(HKEY_CLASSES_ROOT, _SubKey[i], 0, KEY_WRITE, &hKey);
+		lRet = ::RegOpenKeyExW(HKEY_CLASSES_ROOT, _SubKey[i], 0, KEY_QUERY_VALUE, &hKey);
 
 		if(ERROR_SUCCESS == lRet)
 		{

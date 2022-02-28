@@ -33,7 +33,7 @@
     <ClCompile Include="ui\views\documentation-view.c">
       <Filter>views</Filter>
     </ClCompile>
-    <ClCompile Include="ui\views\home-view.c">
+    <ClCompile Include="ui\views\home-view.cpp">
       <Filter>views</Filter>
     </ClCompile>
     <ClCompile Include="ui\views\message-view.c">

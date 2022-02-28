@@ -15,10 +15,15 @@ extern "C" {
 #endif 
 #include <stdio.h>
 #include <string.h>
+#include "LSCryptinc.h"
+#include "RegEdit.h"
 
 int main(int argc, char** argv)
 {
+
 	LCUI_Widget root, pack;
+
+
 
 	LCUI_Init();
 	LCDesign_Init();
@@ -36,5 +41,6 @@ int main(int argc, char** argv)
 	UI_InitMessageView();
 	UI_InitNotificationView();
 	Navbar_Init();
-	return LCUI_Main();
+	int iret = LCUI_Main();
+	return iret;
  }

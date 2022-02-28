@@ -1,6 +1,6 @@
  LSCrypt
 
- Timestamp is 621c7359 (Mon Feb 28 15:01:45 2022)
+ Timestamp is 621cbc9e (Mon Feb 28 20:14:22 2022)
 
  Preferred load address is 0000000180000000
 
@@ -54,7 +54,7 @@
  0006:00000000 00000163H .00cfg                  DATA
  0007:00000000 00000222H _RDATA                  DATA
  0008:00000000 00000880H .rsrc$01                DATA
- 0008:00000880 00014170H .rsrc$02                DATA
+ 0008:00000880 00014059H .rsrc$02                DATA
 
   Address         Publics by Value              Rva+Base               Lib:Object
 

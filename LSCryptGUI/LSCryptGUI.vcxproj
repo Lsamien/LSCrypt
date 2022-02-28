@@ -80,7 +80,7 @@
     <LinkIncremental>true</LinkIncremental>
     <OutDir>$(SolutionDir)bin\$(Platform)\debug\</OutDir>
     <IntDir>$(SolutionDir)bin\mid\$(ProjectName)\$(Platform)\$(Configuration)\</IntDir>
-    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(SolutionDir)include\;</IncludePath>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(SolutionDir)include\;$(SolutionDir)src\reg\</IncludePath>
     <LibraryPath>$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);$(SolutionDir)lib\$(Platform)\debug\</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -126,6 +126,9 @@
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalDependencies>LCUIMain.lib;LCUI.lib;LCDesign.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <PerUserRedirection>true</PerUserRedirection>
+      <EnableUAC>false</EnableUAC>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
     </Link>
     <PostBuildEvent>
       <Command>if not exist $(OutDir)assets mklink /j $(OutDir)assets $(SolutionDir)res\assets</Command>
@@ -153,7 +156,7 @@
     <ClCompile Include="navigation.c" />
     <ClCompile Include="ui\helpers\ui_helper.c" />
     <ClCompile Include="ui\views\documentation-view.c" />
-    <ClCompile Include="ui\views\home-view.c" />
+    <ClCompile Include="ui\views\home-view.cpp" />
     <ClCompile Include="ui\views\message-view.c" />
     <ClCompile Include="ui\views\navbar.c" />
     <ClCompile Include="ui\views\notification-view.c" />

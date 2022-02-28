@@ -195,6 +195,8 @@
       <ProgramDatabaseFile>$(InDir)$(TargetName).pdb</ProgramDatabaseFile>
       <ProfileGuidedDatabase>$(InDir)$(TargetName).pgd</ProfileGuidedDatabase>
       <PerUserRedirection>true</PerUserRedirection>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+      <EnableUAC>false</EnableUAC>
     </Link>
     <PreBuildEvent>
       <Command>
