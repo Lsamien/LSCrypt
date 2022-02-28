@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<lcui-app>
+  <ui>
+    <w type="radio-view" class="view">
+      <w type="h1">Radio</w>
+<w type="p">Select one of a set of options.</w>
+<w type="h2">Basic</w>
+
+<w class="demo-box radio-basic-demo">
+  <w class="demo-preview-box"><radio>Radio</radio></w>
+  <w type="code-block" class="code-block">[color=#062873][b]&lt;radio&gt;[/color][/b]Radio[color=#062873][b]&lt;/radio&gt;[/color][/b]</w>
+</w>
+<w type="h2">Disabled</w>
+
+<w class="demo-box radio-disabled-demo">
+  <w class="demo-preview-box"><radio disabled="disabled">Disabled</radio>
+<radio disabled="disabled" checked="checked">Disabled</radio></w>
+  <w type="code-block" class="code-block">[color=#062873][b]&lt;radio[/color][/b] [color=#4070a0]disabled=[/color][color=#a31515]&quot;disabled&quot;[/color][color=#062873][b]&gt;[/color][/b]Disabled[color=#062873][b]&lt;/radio&gt;[/color][/b]
+[color=#062873][b]&lt;radio[/color][/b] [color=#4070a0]disabled=[/color][color=#a31515]&quot;disabled&quot;[/color] [color=#4070a0]checked=[/color][color=#a31515]&quot;checked&quot;[/color][color=#062873][b]&gt;[/color][/b]Disabled[color=#062873][b]&lt;/radio&gt;[/color][/b]</w>
+</w>
+<w type="h2">Group</w>
+
+<w class="demo-box radio-group-demo">
+  <w class="demo-preview-box"><radio-group>
+  <radio value="1" checked="checked">A</radio>
+  <radio value="2">B</radio>
+  <radio value="3">C</radio>
+  <radio value="4">D</radio>
+</radio-group></w>
+  <w type="code-block" class="code-block">[color=#062873][b]&lt;radio-group&gt;[/color][/b]
+  [color=#062873][b]&lt;radio[/color][/b] [color=#4070a0]value=[/color][color=#a31515]&quot;1&quot;[/color] [color=#4070a0]checked=[/color][color=#a31515]&quot;checked&quot;[/color][color=#062873][b]&gt;[/color][/b]A[color=#062873][b]&lt;/radio&gt;[/color][/b]
+  [color=#062873][b]&lt;radio[/color][/b] [color=#4070a0]value=[/color][color=#a31515]&quot;2&quot;[/color][color=#062873][b]&gt;[/color][/b]B[color=#062873][b]&lt;/radio&gt;[/color][/b]
+  [color=#062873][b]&lt;radio[/color][/b] [color=#4070a0]value=[/color][color=#a31515]&quot;3&quot;[/color][color=#062873][b]&gt;[/color][/b]C[color=#062873][b]&lt;/radio&gt;[/color][/b]
+  [color=#062873][b]&lt;radio[/color][/b] [color=#4070a0]value=[/color][color=#a31515]&quot;4&quot;[/color][color=#062873][b]&gt;[/color][/b]D[color=#062873][b]&lt;/radio&gt;[/color][/b]
+[color=#062873][b]&lt;/radio-group&gt;[/color][/b]</w>
+</w>
+
+    </w>
+  </ui>
+</lcui-app>

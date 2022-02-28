@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<lcui-app>
+  <ui>
+    <w type="message-view" class="view">
+      <w type="h1">Message</w>
+<w type="p">Display global messages as feedback in response to user operations.</w>
+<w type="h2">Normal prompt</w>
+<w type="p">Normal message for information.</w>
+<w class="button-container">
+  <button ref="open-normal-message" class="btn btn-primary">Display normal message</button>
+</w>
+<w type="code-block" class="code-block">[color=#0000ff]#include[/color] [color=#008000][i]&lt;LCUI.h&gt;[/color][/i][color=#0000ff][/color]
+[color=#0000ff]#include[/color] [color=#008000][i]&lt;LCUI/gui/widget.h&gt;[/color][/i][color=#0000ff][/color]
+[color=#0000ff]#include[/color] [color=#008000][i]&lt;LCDesign/ui/components/message.h&gt;[/color][/i][color=#0000ff][/color]
+
+[color=#0000ff][b]static[/color][/b] [color=#2b91af]void[/color] [color=#06287e]OpenMessage[/color](LCUI_Widget w, LCUI_WidgetEvent e, [color=#2b91af]void[/color] [color=#666666]*[/color]arg)
+{
+    LCDesign_OpenInfoMessage([color=#a31515]L[/color][color=#a31515]&quot;This is a normal message&quot;[/color], [color=#40a070]3000[/color]);
+}
+
+[color=#008000][i]// ... other code[/color][/i]
+
+    LCUI_Widget btn [color=#666666]=[/color] LCUIWidget_GetById([color=#a31515]&quot;btn-open-message&quot;[/color]);
+    Widget_BindEvent(btn, [color=#a31515]&quot;click&quot;[/color], OpenMessage, [color=#007020]NULL[/color], [color=#007020]NULL[/color]);
+
+[color=#008000][i]// ... other code[/color][/i]</w>
+<w type="h2">Other types of message</w>
+<w type="p">Messages of success, error and warning types.</w>
+<w class="button-container">
+  <button ref="open-success-message" class="btn">Success</button>
+  <button ref="open-error-message" class="btn">Error</button>
+  <button ref="open-warning-message" class="btn">Warning</button>
+</w>
+<w type="code-block" class="code-block">[color=#0000ff]#include[/color] [color=#008000][i]&lt;LCUI.h&gt;[/color][/i][color=#0000ff][/color]
+[color=#0000ff]#include[/color] [color=#008000][i]&lt;LCUI/gui/widget.h&gt;[/color][/i][color=#0000ff][/color]
+[color=#0000ff]#include[/color] [color=#008000][i]&lt;LCDesign/ui/components/message.h&gt;[/color][/i][color=#0000ff][/color]
+
+[color=#0000ff][b]static[/color][/b] [color=#2b91af]void[/color] [color=#06287e]OpenSuccessMessage[/color](LCUI_Widget w, LCUI_WidgetEvent e, [color=#2b91af]void[/color] [color=#666666]*[/color]arg)
+{
+    LCDesign_OpenSuccessMessage([color=#a31515]L[/color][color=#a31515]&quot;This is a success message&quot;[/color], [color=#40a070]3000[/color]);
+}
+
+[color=#0000ff][b]static[/color][/b] [color=#2b91af]void[/color] [color=#06287e]OpenWarningMessage[/color](LCUI_Widget w, LCUI_WidgetEvent e, [color=#2b91af]void[/color] [color=#666666]*[/color]arg)
+{
+    LCDesign_OpenWarningMessage([color=#a31515]L[/color][color=#a31515]&quot;This is a warning message&quot;[/color], [color=#40a070]3000[/color]);
+}
+
+[color=#0000ff][b]static[/color][/b] [color=#2b91af]void[/color] [color=#06287e]OpenErrorMessage[/color](LCUI_Widget w, LCUI_WidgetEvent e, [color=#2b91af]void[/color] [color=#666666]*[/color]arg)
+{
+    LCDesign_OpenErrorMessage([color=#a31515]L[/color][color=#a31515]&quot;This is a error message&quot;[/color], [color=#40a070]3000[/color]);
+}
+
+[color=#008000][i]// ... other code[/color][/i]
+
+    LCUI_Widget btn;
+
+    btn [color=#666666]=[/color] LCUIWidget_GetById([color=#a31515]&quot;btn-open-success-message&quot;[/color]);
+    Widget_BindEvent(btn, [color=#a31515]&quot;click&quot;[/color], OpenSuccessMessage, [color=#007020]NULL[/color], [color=#007020]NULL[/color]);
+
+    btn [color=#666666]=[/color] LCUIWidget_GetById([color=#a31515]&quot;btn-open-warning-message&quot;[/color]);
+    Widget_BindEvent(btn, [color=#a31515]&quot;click&quot;[/color], OpenWarningMessage, [color=#007020]NULL[/color], [color=#007020]NULL[/color]);
+
+    btn [color=#666666]=[/color] LCUIWidget_GetById([color=#a31515]&quot;btn-open-error-message&quot;[/color]);
+    Widget_BindEvent(btn, [color=#a31515]&quot;click&quot;[/color], OpenErrorMessage, [color=#007020]NULL[/color], [color=#007020]NULL[/color]);
+
+[color=#008000][i]// ... other code[/color][/i]</w>
+<w type="h2">Customize duration</w>
+<w type="p">Customize message display duration to [color=#bd4147][bgcolor=#fdf4f4] 10s [/bgcolor][/color].</w>
+<w class="button-container">
+  <button ref="open-custom-duration-message" class="btn">Customized display duration</button>
+</w>
+<w type="code-block" class="code-block">[color=#0000ff]#include[/color] [color=#008000][i]&lt;LCUI.h&gt;[/color][/i][color=#0000ff][/color]
+[color=#0000ff]#include[/color] [color=#008000][i]&lt;LCUI/gui/widget.h&gt;[/color][/i][color=#0000ff][/color]
+[color=#0000ff]#include[/color] [color=#008000][i]&lt;LCDesign/ui/components/message.h&gt;[/color][/i][color=#0000ff][/color]
+
+[color=#0000ff][b]static[/color][/b] [color=#2b91af]void[/color] [color=#06287e]OpenMessage[/color](LCUI_Widget w, LCUI_WidgetEvent e, [color=#2b91af]void[/color] [color=#666666]*[/color]arg)
+{
+    LCDesign_OpenSuccessMessage([color=#a31515]L[/color][color=#a31515]&quot;This is a prompt message for success, &quot;[/color]
+                                [color=#a31515]L[/color][color=#a31515]&quot;and it will disappear in 10 seconds&quot;[/color],
+                                [color=#40a070]10000[/color]);
+}
+
+[color=#008000][i]// ... other code[/color][/i]
+
+    LCUI_Widget btn [color=#666666]=[/color] LCUIWidget_GetById([color=#a31515]&quot;btn-open-message&quot;[/color]);
+    Widget_BindEvent(btn, [color=#a31515]&quot;click&quot;[/color], OpenMessage, [color=#007020]NULL[/color], [color=#007020]NULL[/color]);
+
+[color=#008000][i]// ... other code[/color][/i]</w>
+<w type="h2">Message with loading indicator</w>
+<w type="p">Display a global loading indicator, which is dismissed by itself asynchronously.</w>
+<w class="button-container">
+  <button ref="open-loading-message" class="btn">Display a loading indicator</button>
+</w>
+<w type="code-block" class="code-block">[color=#0000ff]#include[/color] [color=#008000][i]&lt;LCUI.h&gt;[/color][/i][color=#0000ff][/color]
+[color=#0000ff]#include[/color] [color=#008000][i]&lt;LCUI/gui/widget.h&gt;[/color][/i][color=#0000ff][/color]
+[color=#0000ff]#include[/color] [color=#008000][i]&lt;LCDesign/ui/components/message.h&gt;[/color][/i][color=#0000ff][/color]
+
+[color=#0000ff][b]static[/color][/b] [color=#2b91af]void[/color] [color=#06287e]OpenMessage[/color](LCUI_Widget w, LCUI_WidgetEvent e, [color=#2b91af]void[/color] [color=#666666]*[/color]arg)
+{
+    LCDesign_OpenLoadingMessage([color=#a31515]L[/color][color=#a31515]&quot;Action in progress..&quot;[/color], [color=#40a070]3000[/color]);
+}
+
+[color=#008000][i]// ... other code[/color][/i]
+
+    LCUI_Widget btn [color=#666666]=[/color] LCUIWidget_GetById([color=#a31515]&quot;btn-open-message&quot;[/color]);
+    Widget_BindEvent(btn, [color=#a31515]&quot;click&quot;[/color], OpenMessage, [color=#007020]NULL[/color], [color=#007020]NULL[/color]);
+
+[color=#008000][i]// ... other code[/color][/i]</w>
+
+    </w>
+  </ui>
+</lcui-app>

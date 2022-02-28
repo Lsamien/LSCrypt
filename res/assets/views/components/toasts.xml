@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<lcui-app>
+  <ui>
+    <w type="h1">Toasts</w>
+<w type="p">Push notifications to your visitors with a toast, a lightweight and easily customizable alert message.</w>
+<w type="p">Toasts are lightweight notifications designed to mimic the push notifications that have been popularized by mobile and desktop operating systems.</w>
+<w type="h2">Examples</w>
+<w type="h3">Basic</w>
+<w type="p">To encourage extensible and predictable toasts, we recommend a header and body.</w>
+
+<w class="demo-box basic-toast-demo">
+  <w class="demo-preview-box"><w class="toast">
+  <w class="toast-header">
+    <img class="rounded mr-2" />
+    <strong>LC Design</strong>
+    <w class="toast-header-right">
+      <small class="text-muted">11 mins ago</small>
+      <button class="ml-2 close" data-dismiss="toast">&#215;</button>
+    </w>
+  </w>
+  <text class="toast-body">
+    Hello, world! This is a toast message.
+  </text>
+</w></w>
+  <w type="code-block" class="code-block">[color=#062873][b]&lt;w[/color][/b] [color=#4070a0]class=[/color][color=#a31515]&quot;toast&quot;[/color][color=#062873][b]&gt;[/color][/b]
+  [color=#062873][b]&lt;w[/color][/b] [color=#4070a0]class=[/color][color=#a31515]&quot;toast-header&quot;[/color][color=#062873][b]&gt;[/color][/b]
+    [color=#062873][b]&lt;img[/color][/b] [color=#4070a0]class=[/color][color=#a31515]&quot;rounded mr-2&quot;[/color] [color=#062873][b]/&gt;[/color][/b]
+    [color=#062873][b]&lt;strong&gt;[/color][/b]LC Design[color=#062873][b]&lt;/strong&gt;[/color][/b]
+    [color=#062873][b]&lt;w[/color][/b] [color=#4070a0]class=[/color][color=#a31515]&quot;toast-header-right&quot;[/color][color=#062873][b]&gt;[/color][/b]
+      [color=#062873][b]&lt;small[/color][/b] [color=#4070a0]class=[/color][color=#a31515]&quot;text-muted&quot;[/color][color=#062873][b]&gt;[/color][/b]11 mins ago[color=#062873][b]&lt;/small&gt;[/color][/b]
+      [color=#062873][b]&lt;button[/color][/b] [color=#4070a0]class=[/color][color=#a31515]&quot;ml-2 close&quot;[/color] [color=#4070a0]data-dismiss=[/color][color=#a31515]&quot;toast&quot;[/color][color=#062873][b]&gt;[/color][/b][color=#d55537][b]&amp;#215;[/color][/b][color=#062873][b]&lt;/button&gt;[/color][/b]
+    [color=#062873][b]&lt;/w&gt;[/color][/b]
+  [color=#062873][b]&lt;/w&gt;[/color][/b]
+  [color=#062873][b]&lt;text[/color][/b] [color=#4070a0]class=[/color][color=#a31515]&quot;toast-body&quot;[/color][color=#062873][b]&gt;[/color][/b]
+    Hello, world! This is a toast message.
+  [color=#062873][b]&lt;/text&gt;[/color][/b]
+[color=#062873][b]&lt;/w&gt;[/color][/b]</w>
+</w>
+<w type="h3">Translucent</w>
+<w type="p">Toasts are slightly translucent, too, so they blend over whatever they might appear over.</w>
+
+<w class="demo-box translucent-toast-demo">
+  <w class="demo-preview-box"><w class="toast">
+  <w class="toast-header">
+    <img class="rounded mr-2" />
+    <strong>LC Design</strong>
+    <w class="toast-header-right">
+      <small class="text-muted">11 mins ago</small>
+      <button class="ml-2 close" data-dismiss="toast">&#215;</button>
+    </w>
+  </w>
+  <text class="toast-body">
+    Hello, world! This is a toast message.
+  </text>
+</w></w>
+  <w type="code-block" class="code-block">[color=#062873][b]&lt;w[/color][/b] [color=#4070a0]class=[/color][color=#a31515]&quot;toast&quot;[/color][color=#062873][b]&gt;[/color][/b]
+  [color=#062873][b]&lt;w[/color][/b] [color=#4070a0]class=[/color][color=#a31515]&quot;toast-header&quot;[/color][color=#062873][b]&gt;[/color][/b]
+    [color=#062873][b]&lt;img[/color][/b] [color=#4070a0]class=[/color][color=#a31515]&quot;rounded mr-2&quot;[/color] [color=#062873][b]/&gt;[/color][/b]
+    [color=#062873][b]&lt;strong&gt;[/color][/b]LC Design[color=#062873][b]&lt;/strong&gt;[/color][/b]
+    [color=#062873][b]&lt;w[/color][/b] [color=#4070a0]class=[/color][color=#a31515]&quot;toast-header-right&quot;[/color][color=#062873][b]&gt;[/color][/b]
+      [color=#062873][b]&lt;small[/color][/b] [color=#4070a0]class=[/color][color=#a31515]&quot;text-muted&quot;[/color][color=#062873][b]&gt;[/color][/b]11 mins ago[color=#062873][b]&lt;/small&gt;[/color][/b]
+      [color=#062873][b]&lt;button[/color][/b] [color=#4070a0]class=[/color][color=#a31515]&quot;ml-2 close&quot;[/color] [color=#4070a0]data-dismiss=[/color][color=#a31515]&quot;toast&quot;[/color][color=#062873][b]&gt;[/color][/b][color=#d55537][b]&amp;#215;[/color][/b][color=#062873][b]&lt;/button&gt;[/color][/b]
+    [color=#062873][b]&lt;/w&gt;[/color][/b]
+  [color=#062873][b]&lt;/w&gt;[/color][/b]
+  [color=#062873][b]&lt;text[/color][/b] [color=#4070a0]class=[/color][color=#a31515]&quot;toast-body&quot;[/color][color=#062873][b]&gt;[/color][/b]
+    Hello, world! This is a toast message.
+  [color=#062873][b]&lt;/text&gt;[/color][/b]
+[color=#062873][b]&lt;/w&gt;[/color][/b]</w>
+</w>
+<w type="h3">Stacking</w>
+<w type="p">When you have multiple toasts, we default to vertically stacking them in a readable manner.</w>
+
+<w class="demo-box stacking-toast-demo">
+  <w class="demo-preview-box"><w class="toast">
+  <w class="toast-header">
+    <img class="rounded mr-2" />
+    <strong>LC Design</strong>
+    <w class="toast-header-right">
+      <small class="text-muted">just now</small>
+      <button class="ml-2 close" data-dismiss="toast">&#215;</button>
+    </w>
+  </w>
+  <text class="toast-body">
+    See? Just like this.
+  </text>
+</w>
+
+<w class="toast">
+  <w class="toast-header">
+    <img class="rounded mr-2" />
+    <strong>LC Design</strong>
+    <w class="toast-header-right">
+      <small class="text-muted">2 seconds ago</small>
+      <button class="ml-2 close" data-dismiss="toast">&#215;</button>
+    </w>
+  </w>
+  <text class="toast-body">
+    Heads up, toasts will stack automatically
+  </text>
+</w></w>
+  <w type="code-block" class="code-block">[color=#062873][b]&lt;w[/color][/b] [color=#4070a0]class=[/color][color=#a31515]&quot;toast&quot;[/color][color=#062873][b]&gt;[/color][/b]
+  [color=#062873][b]&lt;w[/color][/b] [color=#4070a0]class=[/color][color=#a31515]&quot;toast-header&quot;[/color][color=#062873][b]&gt;[/color][/b]
+    [color=#062873][b]&lt;img[/color][/b] [color=#4070a0]class=[/color][color=#a31515]&quot;rounded mr-2&quot;[/color] [color=#062873][b]/&gt;[/color][/b]
+    [color=#062873][b]&lt;strong&gt;[/color][/b]LC Design[color=#062873][b]&lt;/strong&gt;[/color][/b]
+    [color=#062873][b]&lt;w[/color][/b] [color=#4070a0]class=[/color][color=#a31515]&quot;toast-header-right&quot;[/color][color=#062873][b]&gt;[/color][/b]
+      [color=#062873][b]&lt;small[/color][/b] [color=#4070a0]class=[/color][color=#a31515]&quot;text-muted&quot;[/color][color=#062873][b]&gt;[/color][/b]just now[color=#062873][b]&lt;/small&gt;[/color][/b]
+      [color=#062873][b]&lt;button[/color][/b] [color=#4070a0]class=[/color][color=#a31515]&quot;ml-2 close&quot;[/color] [color=#4070a0]data-dismiss=[/color][color=#a31515]&quot;toast&quot;[/color][color=#062873][b]&gt;[/color][/b][color=#d55537][b]&amp;#215;[/color][/b][color=#062873][b]&lt;/button&gt;[/color][/b]
+    [color=#062873][b]&lt;/w&gt;[/color][/b]
+  [color=#062873][b]&lt;/w&gt;[/color][/b]
+  [color=#062873][b]&lt;text[/color][/b] [color=#4070a0]class=[/color][color=#a31515]&quot;toast-body&quot;[/color][color=#062873][b]&gt;[/color][/b]
+    See? Just like this.
+  [color=#062873][b]&lt;/text&gt;[/color][/b]
+[color=#062873][b]&lt;/w&gt;[/color][/b]
+
+[color=#062873][b]&lt;w[/color][/b] [color=#4070a0]class=[/color][color=#a31515]&quot;toast&quot;[/color][color=#062873][b]&gt;[/color][/b]
+  [color=#062873][b]&lt;w[/color][/b] [color=#4070a0]class=[/color][color=#a31515]&quot;toast-header&quot;[/color][color=#062873][b]&gt;[/color][/b]
+    [color=#062873][b]&lt;img[/color][/b] [color=#4070a0]class=[/color][color=#a31515]&quot;rounded mr-2&quot;[/color] [color=#062873][b]/&gt;[/color][/b]
+    [color=#062873][b]&lt;strong&gt;[/color][/b]LC Design[color=#062873][b]&lt;/strong&gt;[/color][/b]
+    [color=#062873][b]&lt;w[/color][/b] [color=#4070a0]class=[/color][color=#a31515]&quot;toast-header-right&quot;[/color][color=#062873][b]&gt;[/color][/b]
+      [color=#062873][b]&lt;small[/color][/b] [color=#4070a0]class=[/color][color=#a31515]&quot;text-muted&quot;[/color][color=#062873][b]&gt;[/color][/b]2 seconds ago[color=#062873][b]&lt;/small&gt;[/color][/b]
+      [color=#062873][b]&lt;button[/color][/b] [color=#4070a0]class=[/color][color=#a31515]&quot;ml-2 close&quot;[/color] [color=#4070a0]data-dismiss=[/color][color=#a31515]&quot;toast&quot;[/color][color=#062873][b]&gt;[/color][/b][color=#d55537][b]&amp;#215;[/color][/b][color=#062873][b]&lt;/button&gt;[/color][/b]
+    [color=#062873][b]&lt;/w&gt;[/color][/b]
+  [color=#062873][b]&lt;/w&gt;[/color][/b]
+  [color=#062873][b]&lt;text[/color][/b] [color=#4070a0]class=[/color][color=#a31515]&quot;toast-body&quot;[/color][color=#062873][b]&gt;[/color][/b]
+    Heads up, toasts will stack automatically
+  [color=#062873][b]&lt;/text&gt;[/color][/b]
+[color=#062873][b]&lt;/w&gt;[/color][/b]</w>
+</w>
+
+  </ui>
+</lcui-app>

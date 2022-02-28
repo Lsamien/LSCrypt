@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<lcui-app>
+  <ui>
+    <w class="docs-body">
+      <w id="demo-sidebar" class="demo-sidebar float-left">
+        <w id="demo-sidebar-links" class="nav demo-links scrolllayer">
+          <w class="nav-item">
+            <a class="nav-link nav-header" href="getting-started/introduction.xml" target="demo-content">
+              Getting started
+            </a>
+            <w class="subnav">
+              <w class="nav-item">
+                <a id="doc-link-getting-strted" class="nav-link" href="getting-started/introduction.xml" target="demo-content">
+                  Introduction
+                </a>
+              </w>
+            </w>
+          </w>
+          <w class="nav-item">
+            <a class="nav-link nav-header" href="layout/overview.xml" target="demo-content">
+              Layout
+            </a>
+            <w class="subnav">
+              <w class="nav-item">
+                <a class="nav-link" href="layout/overview.xml" target="demo-content">
+                  Overview
+                </a>
+              </w>
+              <w class="nav-item">
+                <a class="nav-link" href="layout/grid.xml" target="demo-content">
+                  Grid
+                </a>
+              </w>
+            </w>
+          </w>
+          <w class="nav-item">
+            <text class="nav-link nav-header">
+              Content
+            </text>
+            <w class="subnav">
+              <w class="nav-item">
+                <a class="nav-link" href="content/typography.xml" target="demo-content">
+                  Typography
+                </a>
+              </w>
+              <w class="nav-item">
+                <a class="nav-link" href="content/icons.xml" target="demo-content">
+                  Icons
+                </a>
+              </w>
+            </w>
+          </w>
+          <w class="nav-item">
+            <text class="nav-link nav-header">
+              Components
+            </text>
+            <w class="subnav">
+              <w class="nav-item">
+                <a class="nav-link" href="components/alerts.xml" target="demo-content">
+                  Alerts
+                </a>
+              </w>
+              <w class="nav-item">
+                <a class="nav-link" href="components/buttons.xml" target="demo-content">
+                  Buttons
+                </a>
+              </w>
+              <w class="nav-item">
+                <a class="nav-link" href="components/checkbox.xml" target="demo-content">
+                  Checkbox
+                </a>
+              </w>
+              <w class="nav-item">
+                <a class="nav-link" href="components/dropdowns.xml" target="demo-content">
+                  Dropdowns
+                </a>
+              </w>
+              <w class="nav-item">
+                <a class="nav-link" href="components/forms.xml" target="demo-content">
+                  Forms
+                </a>
+              </w>
+              <w class="nav-item">
+                <a class="nav-link" href="components/list-group.xml" target="demo-content">
+                  List group
+                </a>
+              </w>
+              <w class="nav-item">
+                <a class="nav-link" href="components/rate.xml" target="demo-content">
+                  Rate
+                </a>
+              </w>
+              <w class="nav-item">
+                <a class="nav-link" href="components/radio.xml" target="demo-content">
+                  Radio
+                </a>
+              </w>
+              <w class="nav-item">
+                <a class="nav-link" href="components/message.xml" target="demo-content">
+                  Message
+                </a>
+              </w>
+              <w class="nav-item">
+                <a class="nav-link" href="components/notification.xml" target="demo-content">
+                  Notification
+                </a>
+              </w>
+              <w class="nav-item">
+                <a class="nav-link" href="components/modal.xml" target="demo-content">
+                  Modal
+                </a>
+              </w>
+              <w class="nav-item">
+                <a class="nav-link" href="components/tooltips.xml" target="demo-content">
+                  Tooltips
+                </a>
+              </w>
+              <w class="nav-item">
+                <a class="nav-link" href="components/spinners.xml" target="demo-content">
+                  Spinners
+                </a>
+              </w>
+              <w class="nav-item">
+                <a class="nav-link" href="components/switch.xml" target="demo-content">
+                  Switch
+                </a>
+              </w>
+              <w class="nav-item">
+                <a class="nav-link" href="components/scrollbar.xml" target="demo-content">
+                  Scrollbar
+                </a>
+              </w>
+            </w>
+          </w>
+        </w>
+        <scrollbar target="demo-sidebar-links" />
+      </w>
+      <w class="demo-content-wrapper">
+        <w class="demo-content scrolllayer" id="demo-content" />
+        <scrollbar target="demo-content" />
+      </w>
+    </w>
+  </ui>
+</lcui-app>

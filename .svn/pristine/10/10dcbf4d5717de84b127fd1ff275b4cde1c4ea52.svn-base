@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<lcui-app>
+  <ui>
+    <w type="grid-view" class="view">
+      <w type="h1">Grid system</w>
+<w type="p">Use our simple grid to build layouts of some sizes thanks to a twelve column system, Sass variables and mixins, and predefined classes.</w>
+<w type="h2">Examples</w>
+
+<w class="demo-box grid-demo">
+  <w class="demo-preview-box"><w class="container">
+  <w class="row">
+    <text class="col col-6">
+      1 of 2
+    </text>
+    <text class="col col-6">
+      2 of 2
+    </text>
+  </w>
+  <w class="row">
+    <text class="col col-4">
+      1 of 3
+    </text>
+    <text class="col col-4">
+      2 of 3
+    </text>
+    <text class="col col-4">
+      3 of 3
+    </text>
+  </w>
+  <w class="row">
+    <text class="col col-3">
+      1 of 4
+    </text>
+    <text class="col col-3">
+      2 of 4
+    </text>
+    <text class="col col-3">
+      3 of 4
+    </text>
+    <text class="col col-3">
+      4 of 4
+    </text>
+  </w>
+  <w class="row">
+    <text class="col col-2">
+      1 of 6
+    </text>
+    <text class="col col-2">
+      2 of 6
+    </text>
+    <text class="col col-2">
+      3 of 6
+    </text>
+    <text class="col col-2">
+      4 of 6
+    </text>
+    <text class="col col-2">
+      5 of 6
+    </text>
+    <text class="col col-2">
+      6 of 6
+    </text>
+  </w>
+</w></w>
+  <w type="code-block" class="code-block">[color=#062873][b]&lt;w[/color][/b] [color=#4070a0]class=[/color][color=#a31515]&quot;container&quot;[/color][color=#062873][b]&gt;[/color][/b]
+  [color=#062873][b]&lt;w[/color][/b] [color=#4070a0]class=[/color][color=#a31515]&quot;row&quot;[/color][color=#062873][b]&gt;[/color][/b]
+    [color=#062873][b]&lt;text[/color][/b] [color=#4070a0]class=[/color][color=#a31515]&quot;col col-6&quot;[/color][color=#062873][b]&gt;[/color][/b]
+      1 of 2
+    [color=#062873][b]&lt;/text&gt;[/color][/b]
+    [color=#062873][b]&lt;text[/color][/b] [color=#4070a0]class=[/color][color=#a31515]&quot;col col-6&quot;[/color][color=#062873][b]&gt;[/color][/b]
+      2 of 2
+    [color=#062873][b]&lt;/text&gt;[/color][/b]
+  [color=#062873][b]&lt;/w&gt;[/color][/b]
+  [color=#062873][b]&lt;w[/color][/b] [color=#4070a0]class=[/color][color=#a31515]&quot;row&quot;[/color][color=#062873][b]&gt;[/color][/b]
+    [color=#062873][b]&lt;text[/color][/b] [color=#4070a0]class=[/color][color=#a31515]&quot;col col-4&quot;[/color][color=#062873][b]&gt;[/color][/b]
+      1 of 3
+    [color=#062873][b]&lt;/text&gt;[/color][/b]
+    [color=#062873][b]&lt;text[/color][/b] [color=#4070a0]class=[/color][color=#a31515]&quot;col col-4&quot;[/color][color=#062873][b]&gt;[/color][/b]
+      2 of 3
+    [color=#062873][b]&lt;/text&gt;[/color][/b]
+    [color=#062873][b]&lt;text[/color][/b] [color=#4070a0]class=[/color][color=#a31515]&quot;col col-4&quot;[/color][color=#062873][b]&gt;[/color][/b]
+      3 of 3
+    [color=#062873][b]&lt;/text&gt;[/color][/b]
+  [color=#062873][b]&lt;/w&gt;[/color][/b]
+  [color=#062873][b]&lt;w[/color][/b] [color=#4070a0]class=[/color][color=#a31515]&quot;row&quot;[/color][color=#062873][b]&gt;[/color][/b]
+    [color=#062873][b]&lt;text[/color][/b] [color=#4070a0]class=[/color][color=#a31515]&quot;col col-3&quot;[/color][color=#062873][b]&gt;[/color][/b]
+      1 of 4
+    [color=#062873][b]&lt;/text&gt;[/color][/b]
+    [color=#062873][b]&lt;text[/color][/b] [color=#4070a0]class=[/color][color=#a31515]&quot;col col-3&quot;[/color][color=#062873][b]&gt;[/color][/b]
+      2 of 4
+    [color=#062873][b]&lt;/text&gt;[/color][/b]
+    [color=#062873][b]&lt;text[/color][/b] [color=#4070a0]class=[/color][color=#a31515]&quot;col col-3&quot;[/color][color=#062873][b]&gt;[/color][/b]
+      3 of 4
+    [color=#062873][b]&lt;/text&gt;[/color][/b]
+    [color=#062873][b]&lt;text[/color][/b] [color=#4070a0]class=[/color][color=#a31515]&quot;col col-3&quot;[/color][color=#062873][b]&gt;[/color][/b]
+      4 of 4
+    [color=#062873][b]&lt;/text&gt;[/color][/b]
+  [color=#062873][b]&lt;/w&gt;[/color][/b]
+  [color=#062873][b]&lt;w[/color][/b] [color=#4070a0]class=[/color][color=#a31515]&quot;row&quot;[/color][color=#062873][b]&gt;[/color][/b]
+    [color=#062873][b]&lt;text[/color][/b] [color=#4070a0]class=[/color][color=#a31515]&quot;col col-2&quot;[/color][color=#062873][b]&gt;[/color][/b]
+      1 of 6
+    [color=#062873][b]&lt;/text&gt;[/color][/b]
+    [color=#062873][b]&lt;text[/color][/b] [color=#4070a0]class=[/color][color=#a31515]&quot;col col-2&quot;[/color][color=#062873][b]&gt;[/color][/b]
+      2 of 6
+    [color=#062873][b]&lt;/text&gt;[/color][/b]
+    [color=#062873][b]&lt;text[/color][/b] [color=#4070a0]class=[/color][color=#a31515]&quot;col col-2&quot;[/color][color=#062873][b]&gt;[/color][/b]
+      3 of 6
+    [color=#062873][b]&lt;/text&gt;[/color][/b]
+    [color=#062873][b]&lt;text[/color][/b] [color=#4070a0]class=[/color][color=#a31515]&quot;col col-2&quot;[/color][color=#062873][b]&gt;[/color][/b]
+      4 of 6
+    [color=#062873][b]&lt;/text&gt;[/color][/b]
+    [color=#062873][b]&lt;text[/color][/b] [color=#4070a0]class=[/color][color=#a31515]&quot;col col-2&quot;[/color][color=#062873][b]&gt;[/color][/b]
+      5 of 6
+    [color=#062873][b]&lt;/text&gt;[/color][/b]
+    [color=#062873][b]&lt;text[/color][/b] [color=#4070a0]class=[/color][color=#a31515]&quot;col col-2&quot;[/color][color=#062873][b]&gt;[/color][/b]
+      6 of 6
+    [color=#062873][b]&lt;/text&gt;[/color][/b]
+  [color=#062873][b]&lt;/w&gt;[/color][/b]
+[color=#062873][b]&lt;/w&gt;[/color][/b]</w>
+</w>
+
+    </w>
+  </ui>
+</lcui-app>

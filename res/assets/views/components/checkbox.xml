@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<lcui-app>
+  <ui>
+    <w type="checkbox-view" class="view">
+      <w type="h1">Checkbox</w>
+<w type="p">Make multiple selections in a set of options, or mark the status of an option.</w>
+<w type="h2">Basic</w>
+
+<w class="demo-box checkbox-basic-demo">
+  <w class="demo-preview-box"><checkbox>CheckBox</checkbox></w>
+  <w type="code-block" class="code-block">[color=#062873][b]&lt;checkbox&gt;[/color][/b]CheckBox[color=#062873][b]&lt;/checkbox&gt;[/color][/b]</w>
+</w>
+<w type="h2">Disabled</w>
+
+<w class="demo-box checkbox-disabled-demo">
+  <w class="demo-preview-box"><p>
+  <checkbox disabled="disabled">Disabled</checkbox>
+</p>
+<p>
+  <checkbox disabled="disabled" checked="checked">Disabled Checked</checkbox>
+</p></w>
+  <w type="code-block" class="code-block">[color=#062873][b]&lt;p&gt;[/color][/b]
+  [color=#062873][b]&lt;checkbox[/color][/b] [color=#4070a0]disabled=[/color][color=#a31515]&quot;disabled&quot;[/color][color=#062873][b]&gt;[/color][/b]Disabled[color=#062873][b]&lt;/checkbox&gt;[/color][/b]
+[color=#062873][b]&lt;/p&gt;[/color][/b]
+[color=#062873][b]&lt;p&gt;[/color][/b]
+  [color=#062873][b]&lt;checkbox[/color][/b] [color=#4070a0]disabled=[/color][color=#a31515]&quot;disabled&quot;[/color] [color=#4070a0]checked=[/color][color=#a31515]&quot;checked&quot;[/color][color=#062873][b]&gt;[/color][/b]Disabled Checked[color=#062873][b]&lt;/checkbox&gt;[/color][/b]
+[color=#062873][b]&lt;/p&gt;[/color][/b]</w>
+</w>
+
+    </w>
+  </ui>
+</lcui-app>

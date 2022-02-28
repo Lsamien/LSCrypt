@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<lcui-app>
+  <ui>
+    <w type="forms-view" class="view">
+      <w type="h1">Forms</w>
+<w type="p">Examples and usage guidelines for form control styles, layout options, and custom components for creating a wide variety of forms.</w>
+<w type="h2">Examples</w>
+<w type="p">Here’s a quick example to demonstrate Bootstrap’s form styles. Keep reading for documentation on required classes, form layout, and more.</w>
+
+<w class="demo-box forms-demo">
+  <w class="demo-preview-box"><w class="form">
+  <w class="form-group">
+    <w type="label" for="example-input-email-1">Email address</w>
+    <w type="textedit" class="form-control" id="example-input-email-1" placeholder="Enter email" />
+    <w type="small" class="form text text-muted">We'll never share your email with anyone else.</w>
+  </w>
+  <w class="form-group">
+    <w type="label" for="example-input-password-1">Password</w>
+    <w type="password" class="form-control" id="example-input-password-1" placeholder="Passowrd" />
+  </w>
+  <w class="form-group">
+    <w type="button" class="btn btn-primary">Submit</w>
+  </w>
+</w></w>
+  <w type="code-block" class="code-block">[color=#062873][b]&lt;w[/color][/b] [color=#4070a0]class=[/color][color=#a31515]&quot;form&quot;[/color][color=#062873][b]&gt;[/color][/b]
+  [color=#062873][b]&lt;w[/color][/b] [color=#4070a0]class=[/color][color=#a31515]&quot;form-group&quot;[/color][color=#062873][b]&gt;[/color][/b]
+    [color=#062873][b]&lt;w[/color][/b] [color=#4070a0]type=[/color][color=#a31515]&quot;label&quot;[/color] [color=#4070a0]for=[/color][color=#a31515]&quot;example-input-email-1&quot;[/color][color=#062873][b]&gt;[/color][/b]Email address[color=#062873][b]&lt;/w&gt;[/color][/b]
+    [color=#062873][b]&lt;w[/color][/b] [color=#4070a0]type=[/color][color=#a31515]&quot;textedit&quot;[/color] [color=#4070a0]class=[/color][color=#a31515]&quot;form-control&quot;[/color] [color=#4070a0]id=[/color][color=#a31515]&quot;example-input-email-1&quot;[/color] [color=#4070a0]placeholder=[/color][color=#a31515]&quot;Enter email&quot;[/color] [color=#062873][b]/&gt;[/color][/b]
+    [color=#062873][b]&lt;w[/color][/b] [color=#4070a0]type=[/color][color=#a31515]&quot;small&quot;[/color] [color=#4070a0]class=[/color][color=#a31515]&quot;form text text-muted&quot;[/color][color=#062873][b]&gt;[/color][/b]We&#39;ll never share your email with anyone else.[color=#062873][b]&lt;/w&gt;[/color][/b]
+  [color=#062873][b]&lt;/w&gt;[/color][/b]
+  [color=#062873][b]&lt;w[/color][/b] [color=#4070a0]class=[/color][color=#a31515]&quot;form-group&quot;[/color][color=#062873][b]&gt;[/color][/b]
+    [color=#062873][b]&lt;w[/color][/b] [color=#4070a0]type=[/color][color=#a31515]&quot;label&quot;[/color] [color=#4070a0]for=[/color][color=#a31515]&quot;example-input-password-1&quot;[/color][color=#062873][b]&gt;[/color][/b]Password[color=#062873][b]&lt;/w&gt;[/color][/b]
+    [color=#062873][b]&lt;w[/color][/b] [color=#4070a0]type=[/color][color=#a31515]&quot;password&quot;[/color] [color=#4070a0]class=[/color][color=#a31515]&quot;form-control&quot;[/color] [color=#4070a0]id=[/color][color=#a31515]&quot;example-input-password-1&quot;[/color] [color=#4070a0]placeholder=[/color][color=#a31515]&quot;Passowrd&quot;[/color] [color=#062873][b]/&gt;[/color][/b]
+  [color=#062873][b]&lt;/w&gt;[/color][/b]
+  [color=#062873][b]&lt;w[/color][/b] [color=#4070a0]class=[/color][color=#a31515]&quot;form-group&quot;[/color][color=#062873][b]&gt;[/color][/b]
+    [color=#062873][b]&lt;w[/color][/b] [color=#4070a0]type=[/color][color=#a31515]&quot;button&quot;[/color] [color=#4070a0]class=[/color][color=#a31515]&quot;btn btn-primary&quot;[/color][color=#062873][b]&gt;[/color][/b]Submit[color=#062873][b]&lt;/w&gt;[/color][/b]
+  [color=#062873][b]&lt;/w&gt;[/color][/b]
+[color=#062873][b]&lt;/w&gt;[/color][/b]</w>
+</w>
+<w type="h2">Sizing</w>
+<w type="p">Set heights using classes like [color=#bd4147][bgcolor=#fdf4f4] .form-control-lg [/bgcolor][/color] and [color=#bd4147][bgcolor=#fdf4f4] .form-control-sm [/bgcolor][/color].</w>
+
+<w class="demo-box forms-sizing-demo">
+  <w class="demo-preview-box"><textedit class="form-control form-control-lg" placeholder=".form-control-lg" />
+<textedit class="form-control" placeholder="Default input" />
+<textedit class="form-control form-control-sm" placeholder=".form-control-sm" /></w>
+  <w type="code-block" class="code-block">[color=#062873][b]&lt;textedit[/color][/b] [color=#4070a0]class=[/color][color=#a31515]&quot;form-control form-control-lg&quot;[/color] [color=#4070a0]placeholder=[/color][color=#a31515]&quot;.form-control-lg&quot;[/color] [color=#062873][b]/&gt;[/color][/b]
+[color=#062873][b]&lt;textedit[/color][/b] [color=#4070a0]class=[/color][color=#a31515]&quot;form-control&quot;[/color] [color=#4070a0]placeholder=[/color][color=#a31515]&quot;Default input&quot;[/color] [color=#062873][b]/&gt;[/color][/b]
+[color=#062873][b]&lt;textedit[/color][/b] [color=#4070a0]class=[/color][color=#a31515]&quot;form-control form-control-sm&quot;[/color] [color=#4070a0]placeholder=[/color][color=#a31515]&quot;.form-control-sm&quot;[/color] [color=#062873][b]/&gt;[/color][/b]</w>
+</w>
+
+    </w>
+  </ui>
+</lcui-app>

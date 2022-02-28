@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<lcui-app>
+  <ui>
+    <w type="overview-view" class="view">
+      <w type="h1">Overview</w>
+<w type="p">Components and options for laying out your LCUI project, including wrapping containers, a simple grid system.</w>
+<w type="h2">Containers</w>
+<w type="p">Containers are the most basic layout element LCUI and are required when using our default grid system. Choose from a fixed-width container or fluid-width.</w>
+<w type="p">While containers can be nested, most layouts do not require a nested container.</w>
+
+<w class="demo-box layout-demo">
+  <w class="demo-preview-box"><w class="container">
+  <!-- Content here -->
+  <w class="docs-example-container-header"></w>
+  <w class="docs-example-container-sidebar"></w>
+  <w class="docs-example-container-body">
+    <w class="docs-example-container-content"></w>
+  </w>
+</w></w>
+  <w type="code-block" class="code-block">[color=#062873][b]&lt;w[/color][/b] [color=#4070a0]class=[/color][color=#a31515]&quot;container&quot;[/color][color=#062873][b]&gt;[/color][/b]
+  [color=#008000][i]&lt;!-- Content here --&gt;[/color][/i]
+  [color=#062873][b]&lt;w[/color][/b] [color=#4070a0]class=[/color][color=#a31515]&quot;docs-example-container-header&quot;[/color][color=#062873][b]&gt;&lt;/w&gt;[/color][/b]
+  [color=#062873][b]&lt;w[/color][/b] [color=#4070a0]class=[/color][color=#a31515]&quot;docs-example-container-sidebar&quot;[/color][color=#062873][b]&gt;&lt;/w&gt;[/color][/b]
+  [color=#062873][b]&lt;w[/color][/b] [color=#4070a0]class=[/color][color=#a31515]&quot;docs-example-container-body&quot;[/color][color=#062873][b]&gt;[/color][/b]
+    [color=#062873][b]&lt;w[/color][/b] [color=#4070a0]class=[/color][color=#a31515]&quot;docs-example-container-content&quot;[/color][color=#062873][b]&gt;&lt;/w&gt;[/color][/b]
+  [color=#062873][b]&lt;/w&gt;[/color][/b]
+[color=#062873][b]&lt;/w&gt;[/color][/b]</w>
+</w>
+<w type="p">Use [color=#bd4147][bgcolor=#fdf4f4] .container-fluid [/bgcolor][/color] for a full width container, spanning the entire width of the viewport.</w>
+
+<w class="demo-box layout-demo">
+  <w class="demo-preview-box"><w class="container-fluid">
+  <!-- Content here -->
+  <w class="docs-example-container-header"></w>
+  <w class="docs-example-container-sidebar"></w>
+  <w class="docs-example-container-body">
+    <w class="docs-example-container-content"></w>
+  </w>
+</w></w>
+  <w type="code-block" class="code-block">[color=#062873][b]&lt;w[/color][/b] [color=#4070a0]class=[/color][color=#a31515]&quot;container-fluid&quot;[/color][color=#062873][b]&gt;[/color][/b]
+  [color=#008000][i]&lt;!-- Content here --&gt;[/color][/i]
+  [color=#062873][b]&lt;w[/color][/b] [color=#4070a0]class=[/color][color=#a31515]&quot;docs-example-container-header&quot;[/color][color=#062873][b]&gt;&lt;/w&gt;[/color][/b]
+  [color=#062873][b]&lt;w[/color][/b] [color=#4070a0]class=[/color][color=#a31515]&quot;docs-example-container-sidebar&quot;[/color][color=#062873][b]&gt;&lt;/w&gt;[/color][/b]
+  [color=#062873][b]&lt;w[/color][/b] [color=#4070a0]class=[/color][color=#a31515]&quot;docs-example-container-body&quot;[/color][color=#062873][b]&gt;[/color][/b]
+    [color=#062873][b]&lt;w[/color][/b] [color=#4070a0]class=[/color][color=#a31515]&quot;docs-example-container-content&quot;[/color][color=#062873][b]&gt;&lt;/w&gt;[/color][/b]
+  [color=#062873][b]&lt;/w&gt;[/color][/b]
+[color=#062873][b]&lt;/w&gt;[/color][/b]</w>
+</w>
+
+    </w>
+  </ui>
+</lcui-app>
