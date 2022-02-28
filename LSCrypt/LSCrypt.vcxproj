@@ -149,6 +149,7 @@
       <TargetMachine>MachineX86</TargetMachine>
       <ProgramDatabaseFile>$(InDir)$(TargetName).pdb</ProgramDatabaseFile>
       <ProfileGuidedDatabase>$(InDir)$(TargetName).pgd</ProfileGuidedDatabase>
+      <PerUserRedirection>true</PerUserRedirection>
     </Link>
     <PreBuildEvent>
       <Command>$(SolutionDir)AutoVersion.exe</Command>
@@ -176,6 +177,8 @@
       <WarningLevel>Level3</WarningLevel>
       <MinimalRebuild>true</MinimalRebuild>
       <AdditionalIncludeDirectories>$(SolutionDir)include;$(SolutionDir)deps\scrypt</AdditionalIncludeDirectories>
+      <SDLCheck>
+      </SDLCheck>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -191,6 +194,7 @@
       <SubSystem>Windows</SubSystem>
       <ProgramDatabaseFile>$(InDir)$(TargetName).pdb</ProgramDatabaseFile>
       <ProfileGuidedDatabase>$(InDir)$(TargetName).pgd</ProfileGuidedDatabase>
+      <PerUserRedirection>true</PerUserRedirection>
     </Link>
     <PreBuildEvent>
       <Command>
@@ -242,6 +246,7 @@
       <TargetMachine>MachineX86</TargetMachine>
       <ProgramDatabaseFile>$(InDir)$(TargetName).pdb</ProgramDatabaseFile>
       <ProfileGuidedDatabase>$(InDir)$(TargetName).pgd</ProfileGuidedDatabase>
+      <PerUserRedirection>true</PerUserRedirection>
     </Link>
     <PostBuildEvent>
       <Command>
@@ -286,6 +291,7 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <ProgramDatabaseFile>$(InDir)$(TargetName).pdb</ProgramDatabaseFile>
       <ProfileGuidedDatabase>$(InDir)$(TargetName).pgd</ProfileGuidedDatabase>
+      <PerUserRedirection>true</PerUserRedirection>
     </Link>
     <PostBuildEvent>
       <Command>

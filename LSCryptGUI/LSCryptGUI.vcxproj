@@ -128,7 +128,7 @@
       <AdditionalDependencies>LCUIMain.lib;LCUI.lib;LCDesign.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
-      <Command>if not exist $(OutDir)\assets mklink /j $(OutDir)\assets $(SolutionDir)res\assets</Command>
+      <Command>if not exist $(OutDir)assets mklink /j $(OutDir)assets $(SolutionDir)res\assets</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
