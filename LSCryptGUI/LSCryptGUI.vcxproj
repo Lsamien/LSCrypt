@@ -148,6 +148,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\src\reg\RegEdit.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="navigation.c" />
     <ClCompile Include="ui\helpers\ui_helper.c" />
@@ -156,6 +157,9 @@
     <ClCompile Include="ui\views\message-view.c" />
     <ClCompile Include="ui\views\navbar.c" />
     <ClCompile Include="ui\views\notification-view.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\reg\RegEdit.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

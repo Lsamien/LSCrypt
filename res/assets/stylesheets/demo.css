@@ -1,5 +1,5 @@
 root {
-  min-width: 920px;
+  min-width:600px;
   min-height: 480px;
 }
 
@@ -57,7 +57,7 @@ root {
 
 .demo-sidebar {
   height: 100%;
-  width: 256px;
+  width: 156px;
   background-color: #fff;
   border-right: 1px solid #e9ecef;
 }

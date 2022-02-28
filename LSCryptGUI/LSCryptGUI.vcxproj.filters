@@ -19,6 +19,9 @@
     <Filter Include="helpers">
       <UniqueIdentifier>{1772a76f-636b-4a05-8de1-c8e98f347b30}</UniqueIdentifier>
     </Filter>
+    <Filter Include="reg">
+      <UniqueIdentifier>{5b7fb075-aa2a-437d-92b0-0120182b8d33}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -45,5 +48,13 @@
     <ClCompile Include="navigation.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="..\src\reg\RegEdit.cpp">
+      <Filter>reg</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\reg\RegEdit.h">
+      <Filter>reg</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

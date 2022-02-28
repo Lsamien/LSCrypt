@@ -17,6 +17,8 @@
         <w type="p" class="text-muted">
           Currently v.1.1.0
         </w>
+        <w  class="demo-preview-box"><checkbox id="checkbox-lym">CheckBox</checkbox></w>
+        <w class="demo-preview-box"><checkbox>CheckBox</checkbox></w>
       </w>
     </w>
   </ui>

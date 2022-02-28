@@ -31,10 +31,10 @@ int main(int argc, char** argv)
 	Logger_SetLevel(LOGGER_LEVEL_ALL);
 	Widget_Append(root, pack);
 	Widget_Unwrap(pack);
-	Widget_SetTitleW(root, L"LC Design - A UI component framework for building LCUI application.");
+	Widget_SetTitleW(root, L"LS Crypt application.");
 	Navigation_Init();
 	UI_InitMessageView();
 	UI_InitNotificationView();
 	Navbar_Init();
 	return LCUI_Main();
-}
+ }
