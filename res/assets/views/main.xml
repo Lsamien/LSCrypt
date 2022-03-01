@@ -4,14 +4,12 @@
   <resource type="text/css" src="assets/stylesheets/demo.css"/>
   <ui>
     <w class="navbar navbar-dark demo-navbar float-top">
-      <w class="navbar-brand" type="textview">LC</w>
+      <w class="navbar-brand" type="textview">LS</w>
       <w class="navbar-nav" id="demo-navbar-links">
         <w class="nav-item" nav-point="home">
-          <w class="nav-link" type="a" id="navbar-link-home" href="home.xml" target="demo-body">Home</w>
+          <w class="nav-link" type="a" id="navbar-link-home" href="home.xml" target="demo-body">设置</w>
         </w>
-        <w class="nav-item" nav-point="docs">
-          <w class="nav-link" type="a" id="navbar-link-docs" href="documentation.xml" target="demo-body">Documentation</w>
-        </w>
+        
       </w>
       <w class="navbar-nav float-right">
         <w class="nav-item">
@@ -31,7 +29,7 @@
         <w class="nav-item">
           <w type="a" href="https://github.com/lc-ui/lcui.css" class="nav-link icon icon-github-circle"></w>
         </w>
-        <w type="a" href="https://github.com/lc-ui/lcui.css/releases" class="btn btn-outline-yellow ml-3">Download</w>
+        <w type="a" href="https://github.com/lc-ui/lcui.css/releases" class="btn btn-outline-yellow ml-3">更新</w>
       </w>
     </w>
     <w id="demo-body" class="demo-body"></w>

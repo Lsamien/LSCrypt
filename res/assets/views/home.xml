@@ -3,22 +3,20 @@
   <ui>
     <w class="home-masthead">
       <w class="container">
-        <w type="h1">LC Design</w>
+        <w type="h1">LS Crypt</w>
         <w type="p" class="lead">
-          A UI component framework for building LCUI application.
+          一款文件加密工具.
         </w>
         <w type="p" class="lead mb-4">
-          LC Design is an open source toolkit for developing with XML, CSS, and C. Quickly prototype your ideas or build your entire app with our Sass variables and mixins, simple grid system, common prebuilt components.
+        保护您的隐私  
         </w>
-        <w class="lead button-container">
-          <w type="a" href="documentation.xml" target="demo-body" key="docs" class="btn btn-outline-purple btn-lg mr-3">Get started</w>
-          <w type="a" href="https://github.com/lc-ui/lcui.css/releases" class="btn btn-outline-secondary btn-lg">Download</w>
+
+        <w type="p" class="lead mb-4">
+        <w class="demo-preview-box"><switch id="btn-switch-menu" checked="checked">安装到右键菜单</switch></w>
         </w>
-        <w type="p" class="text-muted">
-          Currently v.1.1.0
+        <w type="p" class="lead mb-4">
+        <w class="demo-preview-box"><switch id="btn-switch-pro" checked="checked">设为“.LSC”默认打开程序</switch></w>
         </w>
-        <w  class="demo-preview-box"><checkbox id="checkbox-lym">CheckBox</checkbox></w>
-        <w class="demo-preview-box"><checkbox>CheckBox</checkbox></w>
       </w>
     </w>
   </ui>

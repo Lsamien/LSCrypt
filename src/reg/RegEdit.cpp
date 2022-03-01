@@ -205,7 +205,7 @@ BOOL AssocUFCCheck(HKEY hKeyRoot, LPCTSTR lpSubKey)
 		}
 	}
 	lstrcpy(pEnd, _T(".LSC"));
-	if(ERROR_SUCCESS == rk.Open(hKeyRoot, szSubKey))
+	if(ERROR_SUCCESS == rk.Open(hKeyRoot, szSubKey,KEY_QUERY_VALUE))
 	{
 		ok = true;
 		rk.Close();
