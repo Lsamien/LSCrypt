@@ -11,6 +11,7 @@ BOOL AssocEx(LPCTSTR assocex,BOOL bAssoc = TRUE);
 BOOL AssocExCheck(LPCTSTR assocex);
 BOOL AssocUFCEx(HKEY hKeyRoot, LPCTSTR lpSubKey, bool bAssoc);
 BOOL AssocUFCCheck(HKEY hKeyRoot, LPCTSTR lpSubKey);
+BOOL AssocUFCCheckWrite(HKEY hKeyRoot, LPCTSTR lpSubKey);
 
 BOOL RegDelnodeRecurse (HKEY hKeyRoot, LPTSTR lpSubKey);
 

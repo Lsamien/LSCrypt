@@ -10,16 +10,16 @@
         <w type="p" class="lead mb-4">
         保护您的隐私  
         </w>
-
-        <w type="p" class="lead mb-4">
-        <w class="demo-preview-box"><switch id="btn-switch-menu" checked="checked">安装到右键菜单</switch></w>
+        <w type="p" class="lead mb-4" id="w-alert-admin">
+        <alert class="alert alert-danger">需要对注册表进行操作，请以管理身份运行改程序！</alert>
         </w>
         <w type="p" class="lead mb-4">
-        <w class="demo-preview-box"><switch id="btn-switch-pro" checked="checked">设为“.LSC”默认打开程序</switch></w>
+        <w class="demo-preview-box"><switch id="btn-switch-menu" checked-text="开" unchecked-text="关" checked="checked">安装到右键菜单</switch></w>
         </w>
-<<<<<<< .mine=======        <w class="demo-preview-box"><switch id="btn-switch-menu" checked="checked">安装到右键菜单</switch></w>
-        <w class="demo-preview-box"><switch id="btn-switch-pro" checked="checked">设为“.LSC”默认打开程序</switch></w>
->>>>>>> .theirs      </w>
+        <w type="p" class="lead mb-4">
+        <w class="demo-preview-box"><switch id="btn-switch-pro"  checked-text="开" unchecked-text="关"  checked="checked">设为“.LSC”默认打开程序</switch></w>
+        </w>
+        </w>
     </w>
   </ui>
 </lcui-app>

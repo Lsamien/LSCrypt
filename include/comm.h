@@ -79,7 +79,30 @@ static void WinDebugUserPutStringA(const char * szFormat,...)
 	va_end(szList); 
 	free(szPutstr);	
 }
+static BOOL IsRunasAdmin()
+{
+	BOOL bElevated = FALSE;
+	HANDLE hToken = NULL;
 
+	// Get current process token
+	if (!OpenProcessToken(GetCurrentProcess(), TOKEN_QUERY, &hToken))
+		return FALSE;
+
+	TOKEN_ELEVATION tokenEle;
+	DWORD dwRetLen = 0;
+
+	// Retrieve token elevation information
+	if (GetTokenInformation(hToken, TokenElevation, &tokenEle, sizeof(tokenEle), &dwRetLen))
+	{
+		if (dwRetLen == sizeof(tokenEle))
+		{
+			bElevated = tokenEle.TokenIsElevated;
+		}
+	}
+
+	CloseHandle(hToken);
+	return bElevated;
+}
 //判断用户权限
 static BOOL IsAdmin(void)
 {

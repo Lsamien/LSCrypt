@@ -13,6 +13,7 @@ extern "C" {
 
 #define BTN_SWITCH_MENU	"btn-switch-menu"
 #define BTN_SWITCH_PRO	"btn-switch-pro"
+#define W_ALERT_ADMIN	"w-alert-admin"
 
 static void OnClickBtnSwitchMenu(LCUI_Widget w, LCUI_WidgetEvent e, void* arg)
 {
@@ -89,6 +90,7 @@ void HomeView_Init(void)
 {
 	LCUI_Widget btn_switch_menu = LCUIWidget_GetById(BTN_SWITCH_MENU);
 	LCUI_Widget btn_switch_pro = LCUIWidget_GetById(BTN_SWITCH_PRO);
+	LCUI_Widget w_alert_admin = LCUIWidget_GetById(W_ALERT_ADMIN);
 	if (LoadDLL())
 	{
 		if (fnDLLCheckeRegister())
@@ -109,8 +111,10 @@ void HomeView_Init(void)
 	else
 	{
 		Switch_SetChecked(btn_switch_pro, 0);
-
 	}
+	BOOL err = IsRunasAdmin();// AssocUFCCheckWrite(HKEY_CLASSES_ROOT, L"Software\\Classes");
+	if(err) Widget_Hide(w_alert_admin);
+
 	Widget_BindEvent(btn_switch_menu, "click", OnClickBtnSwitchMenu, NULL, NULL);
 	Widget_BindEvent(btn_switch_pro, "click", OnClickBtnSwitchPro, NULL, NULL);
 }

@@ -1,6 +1,6 @@
 root {
-  min-width:400px;
-  min-height: 380px;
+  min-width:410px;
+  min-height: 440px;
 }
 
 .demo-navbar {
@@ -43,7 +43,7 @@ root {
 }
 
 .home-masthead {
-  padding: 70px 14px;
+  padding: 30px 14px;
 }
 
 .home-masthead h1 {
@@ -51,7 +51,7 @@ root {
 }
 
 .home-masthead .button-container {
-  margin: -5px -5px 14px -5px;
+  margin: -5px -5px 15px -5px;
   padding: 5px;
 }
 

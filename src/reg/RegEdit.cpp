@@ -212,6 +212,38 @@ BOOL AssocUFCCheck(HKEY hKeyRoot, LPCTSTR lpSubKey)
 	}
 	return ok;
 }
+
+
+BOOL AssocUFCCheckWrite(HKEY hKeyRoot, LPCTSTR lpSubKey)
+{
+	CRegKey		rk;;
+	TCHAR		szSubKey[MAX_PATH] = { 0 };
+	TCHAR* pEnd = szSubKey;
+	int			len = 0;
+	bool		ok = false;
+
+
+	if (lpSubKey)
+	{
+		lstrcpyn(szSubKey, lpSubKey, MAX_PATH);
+		len = lstrlen(szSubKey);
+		pEnd = szSubKey + len;
+		if (szSubKey[len - 1] != _T('\\'))
+		{
+			szSubKey[len] = _T('\\');
+			len++;
+			szSubKey[len] = _T('\0');
+			pEnd++;
+		}
+	}
+	lstrcpy(pEnd, _T(".LSC"));
+	if (ERROR_SUCCESS == rk.Open(hKeyRoot, szSubKey, KEY_WRITE))
+	{
+		ok = true;
+		rk.Close();
+	}
+	return ok;
+}
 BOOL AssocUFCEx(HKEY hKeyRoot, LPCTSTR lpSubKey, bool bAssoc)
 {
 	CRegKey		rk;
