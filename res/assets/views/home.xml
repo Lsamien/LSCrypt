@@ -17,7 +17,9 @@
         <w type="p" class="lead mb-4">
         <w class="demo-preview-box"><switch id="btn-switch-pro" checked="checked">设为“.LSC”默认打开程序</switch></w>
         </w>
-      </w>
+<<<<<<< .mine=======        <w class="demo-preview-box"><switch id="btn-switch-menu" checked="checked">安装到右键菜单</switch></w>
+        <w class="demo-preview-box"><switch id="btn-switch-pro" checked="checked">设为“.LSC”默认打开程序</switch></w>
+>>>>>>> .theirs      </w>
     </w>
   </ui>
 </lcui-app>
