@@ -3,7 +3,7 @@
   <resource type="text/css" src="assets/stylesheets/lc-design.css"/>
   <resource type="text/css" src="assets/stylesheets/demo.css"/>
   <ui>
-    <w class="navbar navbar-dark demo-navbar float-top">
+    <w id="main-window" class="navbar navbar-dark demo-navbar float-top">
       <w class="navbar-brand" type="textview">LS</w>
       <w class="navbar-nav" id="demo-navbar-links">
         <w class="nav-item" nav-point="home">
