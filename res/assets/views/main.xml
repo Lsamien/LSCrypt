@@ -27,9 +27,9 @@
           </w>
         </w>
         <w class="nav-item">
-          <w type="a" href="https://github.com/lc-ui/lcui.css" class="nav-link icon icon-github-circle"></w>
+          <w type="a" href="https://github.com/Lsamien/LSCrypt" class="nav-link icon icon-github-circle"></w>
         </w>
-        <w type="a" href="https://github.com/lc-ui/lcui.css/releases" class="btn btn-outline-yellow ml-3">更新</w>
+        <w type="a" href="https://github.com/Lsamien/LSCrypt" class="btn btn-outline-yellow ml-3">更新</w>
       </w>
     </w>
     <w id="demo-body" class="demo-body"></w>
