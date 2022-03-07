@@ -12,7 +12,8 @@ extern "C" {
 #include "ui.h"
 #ifdef __cplusplus 
 }
-#endif 
+#endif
+
 #include <stdio.h>
 #include <string.h>
 #include "LSCryptinc.h"
@@ -41,7 +42,7 @@ static void OnSurfaceReady(LCUI_Event e, void* arg)
 #ifdef _WIN64
 	SetClassLongPtr(hwnd, GCLP_HICON, (LONG)icon);
 #else
-	SetClassLong(hwnd, GCLP_ICON, (LONG)icon);
+	SetClassLong(hwnd, GCLP_HICON, (LONG)icon);
 #endif
 }
 
@@ -64,7 +65,6 @@ int main(int argc, char** argv)
 	Widget_Unwrap(pack);
 	Widget_SetTitleW(root, L"LS Crypt application.");
 	//Widget_SetId(root, ID_WINDOW_MAIN);
-
 
 	LCUIDisplay_BindEvent(LCUI_DEVENT_READY, OnSurfaceReady, NULL, NULL, NULL);
 

@@ -115,10 +115,11 @@
       <GenerateStublessProxies>true</GenerateStublessProxies>
       <TypeLibraryName>$(IntDir)LSCrypt.tlb</TypeLibraryName>
       <HeaderFileName>LSCrypt.h</HeaderFileName>
-      <DllDataFileName />
+      <DllDataFileName>LSCrypt_d.c</DllDataFileName>
       <InterfaceIdentifierFileName>LSCrypt_i.c</InterfaceIdentifierFileName>
       <ProxyFileName>LSCrypt_p.c</ProxyFileName>
-      <ValidateAllParameters>false</ValidateAllParameters>
+      <ValidateAllParameters>
+      </ValidateAllParameters>
     </Midl>
     <ClCompile>
       <AdditionalOptions>/D SUPPORT_REGISTRY %(AdditionalOptions)</AdditionalOptions>
@@ -139,7 +140,7 @@
       <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Link>
-      <RegisterOutput>true</RegisterOutput>
+      <RegisterOutput>false</RegisterOutput>
       <OutputFile>$(OutDir)$(ProjectName).dll</OutputFile>
       <ModuleDefinitionFile>.\LSCrypt.def</ModuleDefinitionFile>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -152,7 +153,8 @@
       <PerUserRedirection>true</PerUserRedirection>
     </Link>
     <PreBuildEvent>
-      <Command>$(SolutionDir)AutoVersion.exe</Command>
+      <Command>
+      </Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -162,8 +164,7 @@
       <GenerateStublessProxies>true</GenerateStublessProxies>
       <TypeLibraryName>$(IntDir)LSCrypt.tlb</TypeLibraryName>
       <HeaderFileName>LSCrypt.h</HeaderFileName>
-      <DllDataFileName>
-      </DllDataFileName>
+      <DllDataFileName>LSCrypt_d.c</DllDataFileName>
       <InterfaceIdentifierFileName>LSCrypt_i.c</InterfaceIdentifierFileName>
       <ProxyFileName>LSCrypt_p.c</ProxyFileName>
     </Midl>
@@ -186,7 +187,7 @@
       <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Link>
-      <RegisterOutput>true</RegisterOutput>
+      <RegisterOutput>false</RegisterOutput>
       <ModuleDefinitionFile>.\LSCrypt.def</ModuleDefinitionFile>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <GenerateMapFile>true</GenerateMapFile>
@@ -215,10 +216,11 @@
       <GenerateStublessProxies>true</GenerateStublessProxies>
       <TypeLibraryName>$(IntDir)LSCrypt.tlb</TypeLibraryName>
       <HeaderFileName>LSCrypt.h</HeaderFileName>
-      <DllDataFileName />
+      <DllDataFileName>LSCrypt_d.c</DllDataFileName>
       <InterfaceIdentifierFileName>LSCrypt_i.c</InterfaceIdentifierFileName>
       <ProxyFileName>LSCrypt_p.c</ProxyFileName>
-      <ValidateAllParameters>false</ValidateAllParameters>
+      <ValidateAllParameters>
+      </ValidateAllParameters>
     </Midl>
     <ClCompile>
       <AdditionalOptions>/D Release_check  /D SUPPORT_REGISTRY %(AdditionalOptions)</AdditionalOptions>
@@ -236,7 +238,7 @@
       <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Link>
-      <RegisterOutput>true</RegisterOutput>
+      <RegisterOutput>false</RegisterOutput>
       <OutputFile>$(OutDir)$(ProjectName).dll</OutputFile>
       <ModuleDefinitionFile>.\LSCrypt.def</ModuleDefinitionFile>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -262,8 +264,7 @@
       <GenerateStublessProxies>true</GenerateStublessProxies>
       <TypeLibraryName>$(IntDir)LSCrypt.tlb</TypeLibraryName>
       <HeaderFileName>LSCrypt.h</HeaderFileName>
-      <DllDataFileName>
-      </DllDataFileName>
+      <DllDataFileName>LSCrypt_d.c</DllDataFileName>
       <InterfaceIdentifierFileName>LSCrypt_i.c</InterfaceIdentifierFileName>
       <ProxyFileName>LSCrypt_p.c</ProxyFileName>
     </Midl>
@@ -283,7 +284,7 @@
       <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Link>
-      <RegisterOutput>true</RegisterOutput>
+      <RegisterOutput>false</RegisterOutput>
       <ModuleDefinitionFile>.\LSCrypt.def</ModuleDefinitionFile>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <GenerateMapFile>true</GenerateMapFile>
