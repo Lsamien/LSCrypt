@@ -67,5 +67,15 @@ static void UnLoadDLL()
 //						LPWSTR lpAutoFileOut, int nAutoFileOut, DWORD *pLastSystemError);
 //DWORD __declspec(dllimport) DllEncrypt(const char *password, const wchar_t *file, pfnEn_DeCallback pCallback, 
 //						LPWSTR lpAutoFileOut, int nAutoFileOut, DWORD *pLastSystemError);
-
+static wchar_t* AnsiToUnicode(const char* szStr)
+{
+	int nLen = MultiByteToWideChar(CP_ACP, MB_PRECOMPOSED, szStr, -1, NULL, 0);
+	if (nLen == 0)
+	{
+		return NULL;
+	}
+	wchar_t* pResult = new wchar_t[nLen];
+	MultiByteToWideChar(CP_ACP, MB_PRECOMPOSED, szStr, -1, pResult, nLen);
+	return pResult;
+}
 #endif //_LS_CRYPT_H__

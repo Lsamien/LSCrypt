@@ -7,7 +7,6 @@
 
 
 extern HINSTANCE g_hInst;
-#define		BITMAP_LOGO	TEXT("EA_key3.0_Logo.bmp")
 
 CPasswordDlg::CPasswordDlg(int nMode, HWND hwndParent)
 {
@@ -16,19 +15,7 @@ CPasswordDlg::CPasswordDlg(int nMode, HWND hwndParent)
 	m_hWnd = NULL;
 	memset(m_password, 0, sizeof(m_password));
 
-	TCHAR	szBitmapPath[MAX_PATH] = {0};
-
-	lstrcpy(szBitmapPath,pExt->m_szDllDir);
-	lstrcat(szBitmapPath,BITMAP_LOGO);
-	
-	if (GetFileAttributes(szBitmapPath) == (DWORD)INVALID_HANDLE_VALUE)
-	{
-		m_hBitmapLogo	  = (HBITMAP)LoadBitmap(g_hInst,MAKEINTRESOURCE(IDB_LOGO));
-	}
-	else
-	{
-		m_hBitmapLogo	= (HBITMAP)LoadImage(g_hInst,szBitmapPath,IMAGE_BITMAP,0,0,LR_LOADFROMFILE);
-	}
+	m_hBitmapLogo = (HBITMAP)LoadBitmap(g_hInst, MAKEINTRESOURCE(IDB_LOGO));
 
 }
 

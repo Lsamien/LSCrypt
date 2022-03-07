@@ -488,7 +488,7 @@ bool CProgressDlg::OnError(WPARAM wParam, LPARAM lParam)
 		break;
 	case LSC_ERR_DECRYPT_FILE_FORMAT:
 		//解密文件格式错误, 通常是解密时, 输入的文件是未加密过的或密码错误
-		::MessageBoxW(m_hWnd,szDecryptError, PROJECT_NAME, MB_ICONWARNING);
+		::MessageBoxW(m_hWnd,L"解密文件格式错误, 通常是解密时, 输入的文件是未加密过的或密码错误", PROJECT_NAME, MB_ICONWARNING);
 		//取消任务
 		AbortTask();
 		break;

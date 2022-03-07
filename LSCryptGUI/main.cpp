@@ -48,6 +48,41 @@ static void OnSurfaceReady(LCUI_Event e, void* arg)
 
 int main(int argc, char** argv)
 {
+	if (!LoadDLL())
+	{
+		return 0;
+	}
+
+	char  file[MAX_PATH];
+	char* pCmdLine = NULL;
+	char* pFile = NULL;
+
+	file[0] = 0;
+
+	//文件路径形式, 如(包括双引号): "C:\\123.UFC"	
+	if (argc>1)
+	{
+		pCmdLine = argv[1];
+		pFile = file;
+		if (*pCmdLine == '\"') pCmdLine++;
+		while (*pCmdLine && *pCmdLine != '\"')
+		{
+			*pFile++ = *pCmdLine++;
+		}
+		*pFile = '\0';
+
+		//IsFileExists(file);
+		if (file[0]/* && IsFileExists(file)*/)
+		{
+			//解密文件
+			if (LoadDLL())
+				fnDllOpenCrypt(AnsiToUnicode(file));
+			return FALSE;
+		}
+	}
+
+
+
 	LCUI_Widget root, pack;
 
 	LCUI_Init();
