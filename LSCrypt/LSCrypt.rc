@@ -13,7 +13,7 @@
 #undef APSTUDIO_READONLY_SYMBOLS
 
 /////////////////////////////////////////////////////////////////////////////
-// Chinese (Simplified, PRC) resources
+// 中文(简体，中国) resources
 
 #if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
 LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
@@ -90,7 +90,9 @@ END
 //
 
 IDR_LSCRYPT             REGISTRY                "LSCrypt.rgs"
+
 IDR_LSCRYPTSHELLEXT     REGISTRY                "LSCryptShellExt.rgs"
+
 
 /////////////////////////////////////////////////////////////////////////////
 //
@@ -239,17 +241,27 @@ END
 
 // Icon with lowest ID value placed first to ensure application icon
 // remains consistent on all systems.
-IDI_CRYPT               ICON                    "LSCrypt.ico"
+IDI_CRYPT               ICON                    "res\\LSCrypt.ico"
+
 
 /////////////////////////////////////////////////////////////////////////////
 //
 // Bitmap
 //
 
-IDB_SHELLEXT            BITMAP                  "bitmap1.bmp"
+IDB_SHELLEXT            BITMAP                  "res\\lslogo.bmp"
+
+
 IDB_SHELLEXT_EN         BITMAP                  "shellext.bmp"
+
 IDB_SHELLEXT_DE         BITMAP                  "bmp00001.bmp"
+
 IDB_LOGO                BITMAP                  "logo.bmp"
+
+IDB_BITMAP_OPEN         BITMAP                  "res\\open.bmp"
+
+IDB_BITMAP_CLOSE        BITMAP                  "res\\close.bmp"
+
 
 /////////////////////////////////////////////////////////////////////////////
 //
@@ -257,6 +269,7 @@ IDB_LOGO                BITMAP                  "logo.bmp"
 //
 
 IDC_MY_HAND             CURSOR                  "hand.cur"
+
 
 /////////////////////////////////////////////////////////////////////////////
 //
@@ -364,7 +377,7 @@ BEGIN
     IDS_DLG_REG_EXPIRED_CH  "该软件已经过期。请先注册后再继续使用。"
 END
 
-#endif    // Chinese (Simplified, PRC) resources
+#endif    // 中文(简体，中国) resources
 /////////////////////////////////////////////////////////////////////////////
 
 

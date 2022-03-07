@@ -1,8 +1,7 @@
 //{{NO_DEPENDENCIES}}
-// Microsoft Visual C++ generated include file.
-// Used by LSCrypt.rc
+// Microsoft Visual C++ 生成的包含文件。
+// 供 LSCrypt.rc 使用
 //
-#include "Version.h"
 #define IDCANCEL2                       3
 #define IDS_PROJNAME                    100
 #define IDR_UFCRYPT                     101
@@ -28,6 +27,7 @@
 #define IDS_DLG_MAIN_FILE_NOTEXIST_CH   119
 #define IDS_DLG_MAIN_DECRYPT_ERROR_EN   120
 #define IDS_DLG_MAIN_DECRYPT_ERROR_CH   121
+#define VER_REVISION                    122
 #define IDS_DLG_PWD_TIP_DE_CH           122
 #define IDS_DLG_PWD_TIP_DE_EN           123
 #define IDS_DLG_PWD_TIP_EN_CH           124
@@ -77,8 +77,11 @@
 #define IDD_PROGRESS_SINGLE             214
 #define IDC_EDIT_SN5                    215
 #define IDS_DLG_PROGRESS_STATIC1_EN     215
+#define IDB_BITMAP_OPEN                 215
 #define IDC_STATIC_TEXT                 216
 #define IDS_DLG_PROGRESS_STATIC1_CH     216
+#define IDB_BITMAP2                     216
+#define IDB_BITMAP_CLOSE                216
 #define IDC_STATIC_INFO                 217
 #define IDS_DLG_PROGRESS_STATIC_CURRENT_PROGRESS_EN 217
 #define IDC_STATIC1                     218
@@ -128,7 +131,7 @@
 // 
 #ifdef APSTUDIO_INVOKED
 #ifndef APSTUDIO_READONLY_SYMBOLS
-#define _APS_NEXT_RESOURCE_VALUE        215
+#define _APS_NEXT_RESOURCE_VALUE        217
 #define _APS_NEXT_COMMAND_VALUE         32768
 #define _APS_NEXT_CONTROL_VALUE         227
 #define _APS_NEXT_SYMED_VALUE           103

@@ -397,6 +397,8 @@
     <Image Include="bmp00001.bmp" />
     <Image Include="EA－Key3.0.bmp" />
     <Image Include="logo.bmp" />
+    <Image Include="res\close.bmp" />
+    <Image Include="res\open.bmp" />
     <Image Include="shellext.bmp" />
     <Image Include="LSCrypt.ico" />
   </ItemGroup>

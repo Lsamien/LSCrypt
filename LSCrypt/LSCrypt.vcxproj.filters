@@ -60,6 +60,8 @@
     <Image Include="logo.bmp" />
     <Image Include="shellext.bmp" />
     <Image Include="LSCrypt.ico" />
+    <Image Include="res\close.bmp" />
+    <Image Include="res\open.bmp" />
   </ItemGroup>
   <ItemGroup>
     <Midl Include="LSCrypt.idl" />

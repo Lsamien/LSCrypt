@@ -168,7 +168,10 @@ HRESULT LSFCryptShellExt::QueryContextMenu(HMENU hMenu, UINT nIndexMenu,
 		
 		if (GetFileAttributes(szDllPath) == (DWORD)INVALID_HANDLE_VALUE)
 		{
-			m_hBitmap = LoadBitmap(g_hInst, MAKEINTRESOURCE(IDB_SHELLEXT));
+			m_hBitmap = LoadBitmap(g_hInst, MAKEINTRESOURCE(IDB_BITMAP_CLOSE));
+			m_hBitmap = LoadBitmap(g_hInst, MAKEINTRESOURCE(IDB_BITMAP_OPEN));
+			//m_hBitmap = (HBITMAP)LoadImage(g_hInst, _T("C:\\lslogo.bmp"), IMAGE_BITMAP, 0, 0, LR_LOADFROMFILE| LR_VGACOLOR |LR_LOADTRANSPARENT);
+			
 		}
 		else
 		{
