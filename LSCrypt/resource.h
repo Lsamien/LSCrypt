@@ -56,29 +56,21 @@
 #define IDC_PASSWORD2                   206
 #define IDD_DIALOG1                     206
 #define IDD_ABOUT                       206
-#define IDD_INPUTSERINAL                207
 #define IDS_DLG_ABOUT_BUTN_OK_CH        208
 #define IDC_STATIC_PASSWORD             209
 #define IDS_DLG_ABOUT_STATIC_REG_EN     209
 #define IDC_MY_HAND                     209
 #define IDC_STATIC_PASSWORD_CONFIRM     210
 #define IDS_DLG_ABOUT_STATIC_REG_CH     210
-#define IDC_EDIT_SN1                    211
 #define IDS_DLG_ABOUT_STATIC_UNREG_EN   211
-#define IDD_REGISTRY                    211
-#define IDC_EDIT_SN2                    212
 #define IDS_DLG_ABOUT_STATIC_UNREG_CH   212
-#define IDC_EDIT_SN3                    213
 #define IDS_DLG_ABOUT_HYPERLINK_REG_EN  213
 #define IDB_LOGO                        213
-#define IDC_EDIT_SN4                    214
 #define IDS_DLG_ABOUT_HYPERLINK_REG_CH  214
 #define IDD_DIALOG2                     214
 #define IDD_PROGRESS_SINGLE             214
-#define IDC_EDIT_SN5                    215
 #define IDS_DLG_PROGRESS_STATIC1_EN     215
 #define IDB_BITMAP_OPEN                 215
-#define IDC_STATIC_TEXT                 216
 #define IDS_DLG_PROGRESS_STATIC1_CH     216
 #define IDB_BITMAP2                     216
 #define IDB_BITMAP_CLOSE                216
@@ -91,13 +83,12 @@
 #define IDS_DLG_PROGRESS_STATIC_TOTAL_PROGRESS_CH 220
 #define IDC_STATIC_TOTAL_PROGRESS       220
 #define IDS_DLG_PROGRESS_BUTN_CANCEL_EN 221
-#define IDC_STATIC_DISPLAY              221
 #define IDS_DLG_PROGRESS_BUTN_CANCEL_CH 222
 #define IDC_LOGO                        222
 #define IDS_DLG_PWD_STATIC1_EN          223
 #define IDC_TIP                         223
 #define IDS_DLG_PWD_STATIC1_CH          224
-#define IDC_ICON                        224
+#define IDC_ICON_LOGO                   224
 #define IDS_DLG_PWD_STATIC2_EN          225
 #define IDC_PROGRESS1                   225
 #define IDC_PROGRESS_SINGLE             225
@@ -131,7 +122,7 @@
 // 
 #ifdef APSTUDIO_INVOKED
 #ifndef APSTUDIO_READONLY_SYMBOLS
-#define _APS_NEXT_RESOURCE_VALUE        217
+#define _APS_NEXT_RESOURCE_VALUE        218
 #define _APS_NEXT_COMMAND_VALUE         32768
 #define _APS_NEXT_CONTROL_VALUE         227
 #define _APS_NEXT_SYMED_VALUE           103

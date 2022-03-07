@@ -103,9 +103,7 @@ public:
 
 	DWORD RunRegister(TCHAR* szKeyFile,TCHAR* szAppName);
 private:
-	void			GetKeyFilePath();
 	void			GetDefaultLanguage();
-	bool			IsRunInV3();
 };
 
 

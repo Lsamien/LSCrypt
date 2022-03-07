@@ -12,8 +12,6 @@
 
 LSFCryptShellExt* pExt;
 extern HINSTANCE	g_hInst;
-extern BOOL WINAPI DllUT311DeviceExist(DWORD *error);
-extern BOOL WINAPI DllUSBKeyDeviceExist(DWORD * error);
 // LSFCryptShellExt
 
 //CFileList LSFCryptShellExt::m_fileList;
@@ -157,34 +155,15 @@ HRESULT LSFCryptShellExt::QueryContextMenu(HMENU hMenu, UINT nIndexMenu,
 	InsertMenu(hMenu, nIndexMenu++, MF_STRING | MF_BYPOSITION | MF_POPUP, 
 		idCmd + 1, szMenuEncrypt);
 
-//ADD Òä½Ý LOGO
-	TCHAR	szDllPath[MAX_PATH] = {0};
-#define		BITMAP_NAME	TEXT("EA£­Key3.0.bmp")
-
-	lstrcpy(szDllPath,m_szDllDir);
-	lstrcat(szDllPath,BITMAP_NAME);
-	if(!m_hBitmap)
+	if (!m_hBitmap)
 	{
-		
-		if (GetFileAttributes(szDllPath) == (DWORD)INVALID_HANDLE_VALUE)
-		{
-			m_hBitmap = LoadBitmap(g_hInst, MAKEINTRESOURCE(IDB_BITMAP_CLOSE));
-			m_hBitmap = LoadBitmap(g_hInst, MAKEINTRESOURCE(IDB_BITMAP_OPEN));
-			//m_hBitmap = (HBITMAP)LoadImage(g_hInst, _T("C:\\lslogo.bmp"), IMAGE_BITMAP, 0, 0, LR_LOADFROMFILE| LR_VGACOLOR |LR_LOADTRANSPARENT);
-			
-		}
-		else
-		{
-			m_hBitmap	= (HBITMAP)LoadImage(g_hInst,szDllPath,IMAGE_BITMAP,0,0,LR_LOADFROMFILE);
-		}
-		
+		m_hBitmap = LoadBitmap(g_hInst, MAKEINTRESOURCE(IDB_BITMAP_CLOSE));
+		//m_hBitmap = LoadBitmap(g_hInst, MAKEINTRESOURCE(IDB_BITMAP_OPEN));
 	}
-#undef		BITMAP_NAME
-//End Òä½Ý LOGO
 
 	SetMenuItemBitmaps(hMenu, nIndexMenu - 1, MF_BYPOSITION, m_hBitmap, m_hBitmap);
 
-	InsertMenu(hMenu, nIndexMenu++, MF_STRING | MF_BYPOSITION | MF_POPUP, 
+	InsertMenu(hMenu, nIndexMenu++, MF_STRING | MF_BYPOSITION | MF_POPUP,
 		idCmd + 2, szMenuDecrypt);
 	//SetMenuItemBitmaps(hMenu, nIndexMenu - 1, MF_BYPOSITION, m_hBitmap, m_hBitmap);
 
@@ -223,11 +202,7 @@ DWORD LSFCryptShellExt::DoDecrypt(HWND hwndParent)
 {
 	CMainDlg		dlg(DIR_DECRYPT, hwndParent);
 	CPasswordDlg	password(PASSWORD_MODE_DECRYPT, hwndParent);
-//Is run in V3 envirument;
-	if (!IsRunInV3())
-	{
-		ShellExecute(NULL,_T("open"),_T("http://start.prayaya.com"),NULL,NULL,SW_NORMAL);
-	}
+
 
 	if(IDOK == password.DoModal())
 	{
@@ -243,51 +218,11 @@ DWORD LSFCryptShellExt::DoDecrypt(HWND hwndParent)
 
 DWORD LSFCryptShellExt::DoAbout(HWND hwndParent)
 {
-//Is run in V3
-	if (!IsRunInV3())
-	{
-		ShellExecute(NULL,_T("open"),_T("http://start.prayaya.com"),NULL,NULL,SW_NORMAL);
-	}
-
 	DialogBox(g_hInst,MAKEINTRESOURCE(IDD_ABOUT), hwndParent, AboutDialogProc);
 
 	return 0;
 }
 
-
-void LSFCryptShellExt::GetKeyFilePath()
-{
-	TCHAR	szKeyFileName[MAX_PATH] = {0};
-	GetModuleFileName(g_hInst,szKeyFileName,sizeof(szKeyFileName));
-	lstrcpy(m_szKeyFilePath,szKeyFileName);
-	for (int i = lstrlen((TCHAR*)m_szKeyFilePath);i>0;i--)
-	{
-		if (m_szKeyFilePath[i] == TEXT('\\'))
-		{
-			lstrcpyn(szKeyFileName,m_szKeyFilePath,i+2);
-			break;
-		}
-	}
-	lstrcat(szKeyFileName,KEY_FILE_NAME);
-	lstrcpy(m_szKeyFilePath,szKeyFileName);
-	WIN32_FIND_DATA		winfd;
-	HANDLE				hFile;
-	//BOOL				bFind;
-	hFile = FindFirstFile(m_szKeyFilePath,&winfd);
-	if (hFile == INVALID_HANDLE_VALUE)
-	{
-		m_bFirstRun = TRUE;
-		hFile = CreateFile(m_szKeyFilePath,GENERIC_READ|GENERIC_WRITE ,FILE_SHARE_READ,NULL,CREATE_ALWAYS,FILE_ATTRIBUTE_NORMAL,NULL);
-		if (hFile != INVALID_HANDLE_VALUE)
-		{
-			CloseHandle(hFile);
-		}
-	}
-	else
-	{
-		m_bFirstRun = FALSE;
-	}
-}
 
 void LSFCryptShellExt::GetDefaultLanguage()
 {
@@ -303,23 +238,6 @@ void LSFCryptShellExt::GetDefaultLanguage()
 		//lstrcpy(szLanguage,TEXT("English"));
 		m_SystemLanguage = LANG_ENGLISH;
 	}
-}
-
-bool	LSFCryptShellExt::IsRunInV3()
-{
-	bool		bRet = false;
-	LPTSTR		lpEnvString = _T("V3RunProgramFlag");
-	TCHAR		lpBuffer[50] = {0};
-	DWORD		dwRet;
-	dwRet = GetEnvironmentVariable(lpEnvString,lpBuffer,sizeof(lpBuffer));
-	if (dwRet != 0)
-	{
-		if (lstrcmp(lpBuffer,_T("-1")) == 0)
-		{
-			bRet = true;
-		}
-	}
-	return true;
 }
 
 /*

@@ -31,7 +31,6 @@
 
 #define _ATL_CSTRING_EXPLICIT_CONSTRUCTORS	// some CString constructors will be explicit
 #define _USING_V110_SDK71_
-#include "define.h"
 
 #include "resource.h"
 #include <atlbase.h>

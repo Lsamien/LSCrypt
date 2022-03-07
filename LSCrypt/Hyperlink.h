@@ -7,7 +7,6 @@
 
 
 #include "windows.h"
-#include "define.h"
 
 #define S_MOUSEOVER	   0
 #define S_MOUSENOTOVER 1

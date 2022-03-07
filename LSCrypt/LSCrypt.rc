@@ -137,34 +137,9 @@ CAPTION "¹ØÓÚ LSCrypt"
 FONT 8, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
     DEFPUSHBUTTON   "OK",IDOK,224,74,50,14
-    CONTROL         "",IDC_ICON,"Static",SS_OWNERDRAW,4,24,20,20
+    CONTROL         "",IDC_ICON_LOGO,"Static",SS_OWNERDRAW,4,24,20,20
     LTEXT           "LSCrypt Version 1.0 BETA ",IDC_STATIC,38,18,160,8
-    LTEXT           "Copyright (C) 2007 Prayaya Electronics Co. Ltd . All rights reserved.",IDC_STATIC,37,38,235,8
     LTEXT           "Static",IDC_STATIC_INFO,37,72,43,8
-END
-
-IDD_INPUTSERINAL DIALOGEX 0, 0, 260, 101
-STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
-CAPTION "Registry"
-FONT 8, "MS Shell Dlg", 400, 0, 0x1
-BEGIN
-    DEFPUSHBUTTON   "OK",IDOK,60,78,50,14
-    PUSHBUTTON      "Cancel",IDCANCEL,159,79,50,14
-    EDITTEXT        IDC_EDIT_SN1,10,47,40,14,ES_AUTOHSCROLL
-    EDITTEXT        IDC_EDIT_SN2,60,47,40,14,ES_AUTOHSCROLL
-    EDITTEXT        IDC_EDIT_SN3,110,47,40,14,ES_AUTOHSCROLL
-    EDITTEXT        IDC_EDIT_SN4,160,47,40,14,ES_AUTOHSCROLL
-    EDITTEXT        IDC_EDIT_SN5,209,46,40,14,ES_AUTOHSCROLL
-    LTEXT           "Static",IDC_STATIC_TEXT,10,22,70,8
-END
-
-IDD_REGISTRY DIALOGEX 0, 0, 186, 95
-STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_SYSMENU
-FONT 8, "MS Shell Dlg", 400, 0, 0x1
-BEGIN
-    DEFPUSHBUTTON   "OK",IDOK,25,67,50,14
-    PUSHBUTTON      "Cancel",IDCANCEL,111,67,50,14
-    LTEXT           "Static",IDC_STATIC_DISPLAY,54,21,76,27
 END
 
 IDD_PROGRESS_SINGLE DIALOGEX 0, 0, 283, 55
@@ -209,22 +184,6 @@ BEGIN
         BOTTOMMARGIN, 88
     END
 
-    IDD_INPUTSERINAL, DIALOG
-    BEGIN
-        LEFTMARGIN, 7
-        RIGHTMARGIN, 253
-        TOPMARGIN, 7
-        BOTTOMMARGIN, 94
-    END
-
-    IDD_REGISTRY, DIALOG
-    BEGIN
-        LEFTMARGIN, 7
-        RIGHTMARGIN, 179
-        TOPMARGIN, 7
-        BOTTOMMARGIN, 88
-    END
-
     IDD_PROGRESS_SINGLE, DIALOG
     BEGIN
         RIGHTMARGIN, 281
@@ -251,12 +210,11 @@ IDI_CRYPT               ICON                    "res\\LSCrypt.ico"
 
 IDB_SHELLEXT            BITMAP                  "res\\lslogo.bmp"
 
+IDB_SHELLEXT_EN         BITMAP                  "res\\shellext.bmp"
 
-IDB_SHELLEXT_EN         BITMAP                  "shellext.bmp"
+IDB_SHELLEXT_DE         BITMAP                  "res\\shellext.bmp"
 
-IDB_SHELLEXT_DE         BITMAP                  "bmp00001.bmp"
-
-IDB_LOGO                BITMAP                  "logo.bmp"
+IDB_LOGO                BITMAP                  "res\\logo.bmp"
 
 IDB_BITMAP_OPEN         BITMAP                  "res\\open.bmp"
 
@@ -268,7 +226,18 @@ IDB_BITMAP_CLOSE        BITMAP                  "res\\close.bmp"
 // Cursor
 //
 
-IDC_MY_HAND             CURSOR                  "hand.cur"
+IDC_MY_HAND             CURSOR                  "res\\hand.cur"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_ABOUT AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
 
 
 /////////////////////////////////////////////////////////////////////////////

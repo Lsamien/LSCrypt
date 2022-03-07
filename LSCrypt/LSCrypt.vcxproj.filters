@@ -26,7 +26,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="About.h" />
-    <ClInclude Include="define.h" />
     <ClInclude Include="FileList.h" />
     <ClInclude Include="Hyperlink.h" />
     <ClInclude Include="MainDlg.h" />
@@ -36,7 +35,6 @@
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="LSCryptShellExt.h" />
     <ClInclude Include="LSCrypt.h" />
-    <ClInclude Include="Version.h" />
     <ClInclude Include="..\deps\scrypt\LSFileCrypt.h">
       <Filter>scrypt</Filter>
     </ClInclude>
@@ -54,14 +52,13 @@
     <ResourceCompile Include="LSCrypt.rc" />
   </ItemGroup>
   <ItemGroup>
-    <Image Include="bitmap1.bmp" />
-    <Image Include="bmp00001.bmp" />
-    <Image Include="EA－Key3.0.bmp" />
     <Image Include="logo.bmp" />
     <Image Include="shellext.bmp" />
     <Image Include="LSCrypt.ico" />
     <Image Include="res\close.bmp" />
     <Image Include="res\open.bmp" />
+    <Image Include="res\LSCrypt.ico" />
+    <Image Include="res\lslogo.bmp" />
   </ItemGroup>
   <ItemGroup>
     <Midl Include="LSCrypt.idl" />

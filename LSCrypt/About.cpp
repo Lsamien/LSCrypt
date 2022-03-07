@@ -178,10 +178,10 @@ void OnDrawItem(WPARAM wParam,LPARAM lParam)
 	HDC		hIconDC;
 	RECT	rect;
 
-	if (nIDCtl == IDC_ICON)
+	if (nIDCtl == IDC_ICON_LOGO)
 	{
 		hIconDC		=lpDrawItemStruct->hDC;
-		hIconWnd	= GetDlgItem(m_hWnd,IDC_ICON);
+		hIconWnd	= GetDlgItem(m_hWnd, IDC_ICON_LOGO);
 		GetClientRect(hIconWnd,&rect);
 
 		/*
